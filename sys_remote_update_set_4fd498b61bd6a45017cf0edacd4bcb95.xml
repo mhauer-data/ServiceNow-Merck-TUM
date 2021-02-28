@@ -1,0 +1,3028 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2021-02-16 14:16:29">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Multi-language Search</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>77de40b21b96a45017cf0edacd4bcbd1</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>4fd498b61bd6a45017cf0edacd4bcb95</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_84cb82d61bf9e050cd3820a36b4bcba3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="DELETE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>2</order><roles/><short_description/><size>md</size><sp_column display_value="2">5acbcb70d7000200a9ad1e173e24d4f1</sp_column><sp_widget display_value="Search Page">b8c57073cb10020000f8d856634c9cfc</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>X228263</sys_created_by><sys_created_on>2021-01-21 13:07:32</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>84cb82d61bf9e050cd3820a36b4bcba3</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_84cb82d61bf9e050cd3820a36b4bcba3</sys_update_name><sys_updated_by>X228263</sys_updated_by><sys_updated_on>2021-01-21 13:07:32</sys_updated_on><title/><u_image/><u_template/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=84cb82d61bf9e050cd3820a36b4bcba3"/></record_update>]]></payload>
+<payload_hash>1198334174</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>03d498b61bd6a45017cf0edacd4bcb98</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1772515e1ed0000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>b38d469ac3f9e050b5988380f9ec378c</update_guid>
+<update_guid_history>b38d469ac3f9e050b5988380f9ec378c:1198334174,48cb82d655f9e05005bbffb7a18bc8a5:858750698</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_24e76036db792c50e2c70ad9f49619b7</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function($scope) {
+  /* widget controller */
+  var c = this;
+	
+	//function
+	$scope.hello = function(){
+		alert("Hello World");
+	}
+		//var c = this ;
+                c.submit = function() {                                                                                  
+                                c.server.update() ;
+                }
+}
+
+]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;/* Dropdown Button */
+.dropbtn {
+  background-color: #482D83;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+  text-align: left
+}
+
+/* The container &amp;lt;div&amp;gt; - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 100%;
+}
+
+/* Links inside the dropdown */
+.dropdown-content option {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content option:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #eb3c96;}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;language_nav&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;Language Nav&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  
+	data.bindCoin ={}
+	//data.lang= ['en','gr']
+	language = ['en'];
+  data.text_heading = "Hello World!" ;
+            if (input) {
+                  if(input.text_input.length &gt; 0) {
+                       //gs.addInfoMessage("Your input text is: " + input.text_input) ;
+                       language = [input.text_input];
+									}
+   }
+
+// populate the 'data' variable
+data.showPrices = $sp.showCatalogPrices();
+//data.q = $sp.getParameter('q');
+data.langvalues = ['en','es','de','it']
+	
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;X228264&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-01-22 19:08:11&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;24e76036db792c50e2c70ad9f49619b7&lt;/sys_id&gt;&lt;sys_mod_count&gt;121&lt;/sys_mod_count&gt;&lt;sys_name&gt;Language Nav&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_24e76036db792c50e2c70ad9f49619b7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;X228264&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-01-27 15:22:22&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="dropdown"&gt;
+  &lt;select class="dropbtn" ng-model="c.data.text_input" ng-change="c.submit()"  &gt;
+  &lt;div class="dropdown-content"&gt;
+    &lt;option ng-repeat= "lang in data.langvalues" value="{{lang}}" selected&gt;{{lang}}&lt;/option&gt;
+  &lt;/div&gt;
+    &lt;/select&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;&lt;span&gt;You selected: &lt;/span&gt;&lt;b&gt;{{c.data.text_input}}&lt;/b&gt;&lt;/p&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-89265570</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>03d498b61bd6a45017cf0edacd4bcb9b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17744703f760000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name>Language Nav</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>6524651c304220d0d87a294bd620d4dc</update_guid>
+<update_guid_history>6524651c304220d0d87a294bd620d4dc:-89265570,522a15d0c0ceec907630ca3ca9c915be:-1700986419,70a9d95035ceec90bd0309e5b3b3375d:128817009,f10345437a7120908539588ca688b063:1385992323,a1ceb4c7aa3120903090bbc9203aac12:-505543085,54aeb8c35131209080b1043b636a95df:-1353559835,bf7a3c4fe3fdec50dfae583b892438bd:1143978458,b56af4cbfffdec50450183888188763a:494261438,0f4a38cbdffdec5006a68790d730fd31:232784355,5866bccb48bdec50310f639bf4ac015e:173004221,d8f5340393fdec50715acca53838e66f:-1149876961,2295f48fa3bdec50cb2e98267dbba6f6:-2035370515,1975700f1dbdec503daf3905caedcd9f:-802130338,5d6578cf8ebdec50d1d483e321b269e8:-2055523234,a455f4cf8fbdec50a5ec6a7b515aa317:2125902015,4c053483abbdec50df6e9f9074d90dd9:-1743473035,d3e4384f30bdec50a311b315b532b8d3:854332316,5ed4788bdcbdec5015d430ef257bc277:-999131241,9074f48b0dbdec50629b747bc14c7829:2125349991,2254788b4abdec506b8cd69050a66bc4:-316437,6df37c4bccbdec5080e8abe7304f70c6:-4038623,f843bc43f4bdec50c0956810d3f41488:-536929250,0982f887e7bdec50c9a172e7ef099ff1:1210320015,1d42f04374bdec508aafa3edd84295e1:-683923022,3e90f04378bdec50b375705eb82416ae:-158674666,d27038cfd47dec50abee593177ca2017:2043949167,2d403ccf627dec5027067bedb01ab68a:-775968762,bd20b4cb047dec502a0a540c2ea478fb:1096888422,df2f60cba57dec50b0033cf4f9dd5d32:1432496115,023eec47d07dec507f99f5060904a319:-1622329762,2ffdac43c87dec50184880e201b45c7e:-1217587756,31eda443767dec50b30b1cdaef65f548:-1205756129,77dde047f47dec50417f23f345fbd861:-1120157707,975de0c7353dec50cae44df4fed93179:1302870790,715d2c4f2f3dec50268b1e6035ca4cce:-521462335,09e664cb24f9ec500cab0a9f8370a0af:-1876487481,18a6a48b46f9ec5065c010fdc0139bc6:-1349309103,0376e44b85f9ec5086165db65c9f015e:1017787551,9806a40317b9ec5081e6d027ca1cd3a1:1228995900,69d528872cf9ec5028b0abb6636668be:-1893452923,2c6b39b293b96c503b98f6142ab2237d:259204626,365b39b27db96c5018330c05d0038ea2:-1887673613,8d1bf97a97396c50b78bae592763abac:125255196,a9baf576fc396c50e88d3a5e100905c5:1623765115,2c58757a52396c50b81ff170af95f46c:259204626,7b87b5769e396c50f13b0c7d5b2b3cae:-1575180502,5f77b57e24f56c50a060260422062bf4:337489296,0e277176f0396c5015d0e82ef6ad1b27:326717817,30c3b17e32f56c501c1754ededfbfffd:-1575180502,078331f667f56c503ce8c246234584ad:-1073027565,630d253ae6b56c50ab7e35b82ff4c515:-728865563,d83c6d3684b56c50ce0c195b8f3eb085:731084037,bfcb6176d9b56c50d25d9e0548038bab:1639372471,2ccb6d363cb56c50f26ea89de369fc7b:-1209462351,179b6536bfb56c50a2d5d33e04ac05ce:-1855549577,b36ba1f236b56c50f03c889f85201d67:961233520,1f3b25f2d8b56c50ca62894b2fd2b73a:-1644549536,f02b657279b56c5006f31433053675d3:-851147794,47baa1b283b56c5017b78c96505c31ca:357742001,237a617e1a756c505686c7bc70738a3e:1156386336,256a213e6c756c5009eea3713be092f7:1118492497,630ae1fa1d756c507608eb8b8dc1ff38:-1889071218,69f92dbe40756c5064388106e7102692:775149843,54a92d7e71756c50a90624f7ed08c858:220452013,35692d3e95756c5090bc04998447238a:521638488,a33961fac6756c50f796a7334dae4881:342778403,371961b280756c50a83ddb32b2836078:148131906,a2972976ef756c50ad3f3b3db4555c2f:-579728934,a6672d36e6756c5015e7b72ab8d4205f:484233495,cab621b242756c50a44de2261210ef46:368545952,d0962dfa3c356c505673e9e186c725fb:-1292633323,8336a9feb1356c50f3e2b5188b867921:484233495,92d5a5be03356c50a8c0a53033f71ebe:-2071545845,4785a1bea7f16c5087ebed40296c66cc:148499993,dc41a93e2af16c509c406d8ead5fc53e:-406439157,262b913a4cb16c5012cf97f56df35ce2:-77844902,e90b11f6f7b16c50f57a53a82989cd55:-303907790,dcf8ddfa30716c507c4ad1aeef3f684d:-77844902,5fd851fed0716c507a62c8d99f340afe:963232989,3ac895be08716c50c512752325de150a:-77844902,87481dba3f716c50d5aa722aabb9d52b:1710097178,0428d17a7e716c50df6b30ba9fd7d6ae:722662202,b3e71d7aa2716c50503b8a04a5608a11:1883933363,03d7957e65316c50036e1e42a6f7fa73:2016976615,3645d57e3e316c50aa8c99a71b00fc6f:600114925,e535113efc316c509c9ab33ad47a9d3b:495339944,44d4d5fa1b316c50e52ce60f31d0be7c:-1404577423,6b5c747ad33d2c508e382173b803b6d4:-661632253,ba5c743ea43d2c50e9b88f20a09816ce:667624036,013cb0fa9c3d2c50efbc3f7c4d48feb7:-153165276,bb0c787a2b3d2c50334f40a627e1f8f2:1995079834,2edbf8761f3d2c500f3ab97f15b13be9:1880850419,ddcbf87a773d2c50f66c359a5c187661:622565832,9f9b78b64d3d2c50fa79d0a5cae818ff:-1626885495,e88b78f26c3d2c50196637393f8cd0b3:-806096183,ff2b783a4d3d2c504e966b920e78d1d7:-960217117,f01a3876e83d2c50ce610f384f3e1500:-395646042,e9e9bcf2fe3d2c50cfee54fe8318b890:-1216435354,63e830364b3d2c5023919bbbdc1f052f:1221544859,0eb830fed3f92c5049a4f47714902461:1519385161,b3a830fedbf92c5060a963594dd5c058:-218394341,7e48f47abef92c50f8a55bd9b6667d71:138430453,1746f07e48f92c501795bc4e879d991f:420916358,40e4b8f209f92c50a1fb44fd38b8429a:-241070860,0d84bcf6baf92c5004087674e5659b59:508112853,e154b8fe21b92c507f5a999a5c6b3783:-815343586,5a63f0768ff92c506bec7bf35afcc906:1887055498,b62378b6f1f92c5074307028e1fde8d8:-1616448016,c3e2b076b7f92c500d4237fe881d6d52:-574528529,bd6170fe51b92c5071ce7f9421e0a53b:1840331608,2e51b0fa32b92c500fdef29863b5dfe1:-1523876077,2111f47a2db92c50be26e0655c38961d:-1329310850,d3c0f8baefb92c50d4e40908d71fa72e:-1124844684,18107cba4fb92c505255206fa00bba2f:-1802328728,7aef6c3613b92c509dc2ac4a7b7f7ac0:-1732610095,b2af247a25b92c5046896d39f02f0b0a:-1118655333,609fa83aa3b92c5008202559c147a738:-1251938232,7e4f6c3641b92c502d330a52d6609fc7:1515738543,b61fe03a11b92c502272af2931648bb0:-1703680549,437e6c362eb92c50d3e497cc05eb3baf:-747594912,aebde8f262b92c507115104e8ec75f7a:1416740983,64e7ac7604792c5089e14b0cf34eb46f:-659746557</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_3713d5101bce289017cf0edacd4bcbc3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="DELETE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>3</order><roles/><short_description/><size>md</size><sp_column display_value="2">5acbcb70d7000200a9ad1e173e24d4f1</sp_column><sp_widget display_value="search page translation 2">00f151141b8e289017cf0edacd4bcb0f</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>X228263</sys_created_by><sys_created_on>2021-01-27 14:07:59</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>3713d5101bce289017cf0edacd4bcbc3</sys_id><sys_mod_count>1</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_3713d5101bce289017cf0edacd4bcbc3</sys_update_name><sys_updated_by>X228263</sys_updated_by><sys_updated_on>2021-01-27 14:21:16</sys_updated_on><title/><u_image/><u_template/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=3713d5101bce289017cf0edacd4bcbc3"/></record_update>]]></payload>
+<payload_hash>1019651183</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>07d498b61bd6a45017cf0edacd4bcb97</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>177443cef2e0000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>2457151c73ce289017ef964786af0466</update_guid>
+<update_guid_history>2457151c73ce289017ef964786af0466:1019651183,262615d85cce2890dcec65312749ee19:878017915,331359104bce28907e11417e2952dde9:689075642</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_row_a2f3a83edbb52c50e2c70ad9f49619ed</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="DELETE"><class_name/><order>1</order><sp_column/><sp_container display_value="Search Results - Container 2">29cbcb70d7000200a9ad1e173e24d4b9</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>X228264</sys_created_by><sys_created_on>2021-01-22 18:51:07</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>a2f3a83edbb52c50e2c70ad9f49619ed</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_row_a2f3a83edbb52c50e2c70ad9f49619ed</sys_update_name><sys_updated_by>X228264</sys_updated_by><sys_updated_on>2021-01-22 18:51:07</sys_updated_on></sp_row></record_update>]]></payload>
+<payload_hash>-729538059</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>07d498b61bd6a45017cf0edacd4bcb9a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1772b6fe6bb0000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Row</type>
+<update_domain>global</update_domain>
+<update_guid>8814a07218392c5048b4ed1f34329e00</update_guid>
+<update_guid_history>8814a07218392c5048b4ed1f34329e00:-729538059,62f3a83e13b52c502a726645ab85eaf0:-1922185239</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_e3cbcb70d7000200a9ad1e173e24d4ca</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="2">5acbcb70d7000200a9ad1e173e24d4f1</sp_column><sp_widget display_value="Search Page">b8c57073cb10020000f8d856634c9cfc</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2015-05-13 16:15:19</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>e3cbcb70d7000200a9ad1e173e24d4ca</sys_id><sys_mod_count>11</sys_mod_count><sys_name>Search</sys_name><sys_package display_value="Service Portal - Core" source="com.glide.service-portal">f637072bdbb20300786b766eaf9619cf</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_e3cbcb70d7000200a9ad1e173e24d4ca</sys_update_name><sys_updated_by>X228263</sys_updated_by><sys_updated_on>2021-01-21 13:07:32</sys_updated_on><title>Search</title><u_image/><u_template/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=e3cbcb70d7000200a9ad1e173e24d4ca"/><sys_translated_text action="INSERT_OR_UPDATE"><documentkey>e3cbcb70d7000200a9ad1e173e24d4ca</documentkey><fieldname>title</fieldname><language>de</language><sys_created_by>system</sys_created_by><sys_created_on>2017-12-09 09:22:36</sys_created_on><sys_id>3f6d23a7db3a8300da85766eaf961911</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2017-12-09 09:22:36</sys_updated_on><tablename>sp_instance</tablename><value>Suchen</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey>e3cbcb70d7000200a9ad1e173e24d4ca</documentkey><fieldname>title</fieldname><language>es</language><sys_created_by>X157160</sys_created_by><sys_created_on>2019-08-03 16:39:29</sys_created_on><sys_id>608ed9a9db03b700b348f1571d961968</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>X157160</sys_updated_by><sys_updated_on>2019-08-03 16:39:29</sys_updated_on><tablename>sp_instance</tablename><value>Buscar</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey>e3cbcb70d7000200a9ad1e173e24d4ca</documentkey><fieldname>title</fieldname><language>fr</language><sys_created_by>X157160</sys_created_by><sys_created_on>2019-08-03 11:45:03</sys_created_on><sys_id>3f1b9065db4bb300b348f1571d9619b1</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>X157160</sys_updated_by><sys_updated_on>2019-08-03 11:45:03</sys_updated_on><tablename>sp_instance</tablename><value>Rechercher</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey>e3cbcb70d7000200a9ad1e173e24d4ca</documentkey><fieldname>title</fieldname><language>it</language><sys_created_by>X157160</sys_created_by><sys_created_on>2019-08-03 14:17:36</sys_created_on><sys_id>920e74e9db073700b348f1571d9619f1</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>X157160</sys_updated_by><sys_updated_on>2019-08-03 14:17:36</sys_updated_on><tablename>sp_instance</tablename><value>Cerca</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey>e3cbcb70d7000200a9ad1e173e24d4ca</documentkey><fieldname>title</fieldname><language>ja</language><sys_created_by>X157160</sys_created_by><sys_created_on>2019-08-03 19:04:53</sys_created_on><sys_id>62cf7565db0ff700b348f1571d9619c9</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>X157160</sys_updated_by><sys_updated_on>2019-08-03 19:04:53</sys_updated_on><tablename>sp_instance</tablename><value>検索</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey>e3cbcb70d7000200a9ad1e173e24d4ca</documentkey><fieldname>title</fieldname><language>ko</language><sys_created_by>anthony.rodenas</sys_created_by><sys_created_on>2019-08-19 06:55:41</sys_created_on><sys_id>4d52f16edbd7fb40d2339455ca9619a1</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>anthony.rodenas</sys_updated_by><sys_updated_on>2019-08-19 06:55:41</sys_updated_on><tablename>sp_instance</tablename><value>검색</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey>e3cbcb70d7000200a9ad1e173e24d4ca</documentkey><fieldname>title</fieldname><language>pt</language><sys_created_by>X157160</sys_created_by><sys_created_on>2019-08-03 21:36:45</sys_created_on><sys_id>db826225db0b7b00b348f1571d9619ca</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>X157160</sys_updated_by><sys_updated_on>2019-08-03 21:36:45</sys_updated_on><tablename>sp_instance</tablename><value>Pesquisar</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey>e3cbcb70d7000200a9ad1e173e24d4ca</documentkey><fieldname>title</fieldname><language>th</language><sys_created_by>X157160</sys_created_by><sys_created_on>2019-08-04 00:01:49</sys_created_on><sys_id>48c387e9dbc3fb00b348f1571d961977</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>X157160</sys_updated_by><sys_updated_on>2019-08-04 00:01:49</sys_updated_on><tablename>sp_instance</tablename><value>ค้นหา</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey>e3cbcb70d7000200a9ad1e173e24d4ca</documentkey><fieldname>title</fieldname><language>zh</language><sys_created_by>X202445</sys_created_by><sys_created_on>2020-08-04 13:19:15</sys_created_on><sys_id>3920b6eb1b12d85063ce32a99b4bcbcb</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>X202445</sys_updated_by><sys_updated_on>2020-08-04 13:19:15</sys_updated_on><tablename>sp_instance</tablename><value>搜索</value></sys_translated_text></record_update>]]></payload>
+<payload_hash>-88733327</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>0bd498b61bd6a45017cf0edacd4bcb99</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>177250ea4ba0000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name>Search</target_name>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>bfbb82d6b5f9e0500f0480526aeb539a</update_guid>
+<update_guid_history>bfbb82d6b5f9e0500f0480526aeb539a:-88733327,f7bb82d6ecf9e0509c0ecb193b85a097:-1867155709</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_a126dd981bce289017cf0edacd4bcbe5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>2</order><roles/><short_description/><size>md</size><sp_column display_value="2">5acbcb70d7000200a9ad1e173e24d4f1</sp_column><sp_widget display_value="search page translation">2d2d8a5a1bf9e050cd3820a36b4bcb24</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>X228263</sys_created_by><sys_created_on>2021-01-27 14:21:12</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>a126dd981bce289017cf0edacd4bcbe5</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_a126dd981bce289017cf0edacd4bcbe5</sys_update_name><sys_updated_by>X228263</sys_updated_by><sys_updated_on>2021-01-27 14:21:12</sys_updated_on><title/><u_image/><u_template/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=a126dd981bce289017cf0edacd4bcbe5"/></record_update>]]></payload>
+<payload_hash>121063388</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>0fd498b61bd6a45017cf0edacd4bcb98</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17744383eff0000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>2526dd9889ce28903f18f3fcfc6f3fe7</update_guid>
+<update_guid_history>2526dd9889ce28903f18f3fcfc6f3fe7:121063388</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_update_set_77de40b21b96a45017cf0edacd4bcbd1</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_set"><sys_update_set action="INSERT_OR_UPDATE"><application display_value="Global">global</application><base_update_set/><completed_by/><completed_on>2021-02-16 13:50:18</completed_on><description/><install_date/><installed_from/><is_default>false</is_default><merged_to/><name>Multi-language Search</name><origin_sys_id/><parent/><release_date/><remote_sys_id/><state>in progress</state><sys_created_by>X228263</sys_created_by><sys_created_on>2021-02-16 13:50:39</sys_created_on><sys_id>77de40b21b96a45017cf0edacd4bcbd1</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>X228263</sys_updated_by><sys_updated_on>2021-02-16 13:50:39</sys_updated_on></sys_update_set></record_update>]]></payload>
+<payload_hash>274204889</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>0fd498b61bd6a45017cf0edacd4bcb9b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>177ab1bdca30000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name>Multi-language Search</target_name>
+<type>Update Set</type>
+<update_domain>global</update_domain>
+<update_guid>930f44b2d996a450a0d0739c5cdde104</update_guid>
+<update_guid_history>930f44b2d996a450a0d0739c5cdde104:274204889</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_2f75e8b6db392c50e2c70ad9f49619ce</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="DELETE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>2</order><roles/><short_description/><size>md</size><sp_column display_value="1">637b87555b3212000d7ec7ad31f91a62</sp_column><sp_widget display_value="Knowledge Language Picker">50203e06db26220099f93691f0b8f5ff</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>X228264</sys_created_by><sys_created_on>2021-01-22 18:57:45</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>2f75e8b6db392c50e2c70ad9f49619ce</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_2f75e8b6db392c50e2c70ad9f49619ce</sys_update_name><sys_updated_by>X228264</sys_updated_by><sys_updated_on>2021-01-22 18:57:45</sys_updated_on><title/><u_image/><u_template/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=2f75e8b6db392c50e2c70ad9f49619ce"/></record_update>]]></payload>
+<payload_hash>-503740283</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>43d498b61bd6a45017cf0edacd4bcb97</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1772b7674120000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>7cb5243a5b392c50dd21ce3705590ec9</update_guid>
+<update_guid_history>7cb5243a5b392c50dd21ce3705590ec9:-503740283,f775e8b6b3392c50ab87ac468b79bdd1:-645373551</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_rel_widget_clone_a52dce5a1bf9e050cd3820a36b4bcb36</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone"><sp_rel_widget_clone action="INSERT_OR_UPDATE"><child display_value="search page translation">2d2d8a5a1bf9e050cd3820a36b4bcb24</child><cloned>2021-01-21 13:13:39</cloned><last_validated>2021-01-21 13:13:39</last_validated><parent display_value="Search Page">b8c57073cb10020000f8d856634c9cfc</parent><payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;standard&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function ($scope, $window, $location, spUtil, $rootScope) {
+	spUtil.setSearchPage($scope.data.t);
+	$scope.showScore = $scope.options.show_score == 'true' || $scope.options.show_score == true;
+	$scope.latitude = null;
+	$scope.longitude = null;
+	$scope.isLocationTrackerDisabled = $scope.data.isLocationTrackerDisabled === "true";
+
+	$scope.getBGImage = function(item) {
+		return {"background-image": "url('" + item.picture + "')"};
+	}
+
+	$scope.search = function(searchTerm) {
+		$location.search('q', searchTerm);
+	}
+
+	$scope.highlight = function(haystack, needle) {
+		if (!haystack)
+			return "";
+
+		if (!needle)
+			return haystack;
+
+		return haystack.replace(new RegExp(needle.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1"), "gi"), function(match) {
+			return '&lt;span class="highlight mark"&gt;' + match + '&lt;/span&gt;';
+		});
+	}
+
+	$scope.escapeHTML = function(value) {
+		var entityMap = {
+					"&amp;": "&amp;amp;",
+					"&lt;": "&amp;lt;",
+					"&gt;": "&amp;gt;",
+					'"': '&amp;quot;',
+					"'": '&amp;#39;',
+					"/": '&amp;#x2F;'
+				};
+		if (!value) return value;
+		value = String(value).replace(/[&amp;&lt;&gt;"'\/]/g, function (s) {
+        		return entityMap[s];
+        	});
+
+		return value;
+	}
+
+	function setUserLocationCoords(cb) {
+		var onSuccess = function(pos) {
+			return cb({
+				latitude: pos.coords.latitude,
+				longitude: pos.coords.longitude
+			})
+		};
+
+		var onError = function() {
+			return cb({
+				latitude: null,
+				longitude: null	
+			});
+		};
+
+		return window.navigator.geolocation.getCurrentPosition(onSuccess, onError, {
+			enableHighAccuracy: true
+		});
+	}
+
+	if(!$scope.isLocationTrackerDisabled){
+		setUserLocationCoords(function(coords) {
+			$scope.latitude = coords.latitude;
+			$scope.longitude = coords.longitude;
+			
+			// Track Search Event with Location coordinates
+			trackSearchEvent();
+
+		});
+	} else {
+		//Track Search Event without location coordinates
+		trackSearchEvent();
+	}
+	
+	function trackSearchEvent() {
+		var c = $scope;
+
+		var payload =  {
+			query: _.get(c, 'data.q'),
+			portal_id: _.get(c, 'portal.sys_id'),
+			page_id: _.get($window, 'spSearchAnalytics.page_id', c.page.id),
+			refinement_occurred: false, // refinement cannot occur in this widget since no facets are available
+			browser_info: $window.navigator.userAgent,
+			location: {
+				latitude: $scope.latitude,
+				longitude: $scope.longitude
+			},
+			search_results: getSearchResultsSignals($scope),
+			results_per_source: getSearchSources($scope)
+		}
+
+		var payloadObject = {
+			action: "GlideSPSearchAnalytics",
+			payload: payload
+		};
+		c.server.get(payloadObject);
+	}
+
+	function getSearchSources($scope) {
+		var c = $scope;
+		var sources = {};
+		if (c.data.t) {
+			sources[c.data.t] = 0;
+		}
+		else {
+			c.data.searchSources.map(function(key) {
+				sources[key] = 0;
+			});
+		}
+		$scope.data.results.map(function(item) {
+			var sourceId = _.get(item, 'type');
+			if (sources[sourceId])
+				sources[sourceId]++;
+			else
+				sources[sourceId] = 1;
+		});
+		var searchSources = [];
+		Object.keys(sources).map(function(key) {
+			var source_id = c.data.searchSourceConfiguration[key];
+			searchSources.push({
+				source_id: source_id,
+				number_of_results: sources[key]
+			});
+		});
+		return searchSources;
+	}
+
+	function getSearchResultsSignals($scope) {
+		return $scope.data.results.map(function(item) {
+			var recordId = item.sys_id;
+			var tableName = item.table;
+			
+			return {
+				record_id: recordId,
+				table_name: tableName
+			};
+		});
+	}
+
+	function pageChanged(newUrl, oldUrl) {
+		var newUrlParams = newUrl.match(/id=.+/),
+		oldUrlParams = oldUrl.match(/id=.+/);
+
+		if(!newUrlParams &amp;&amp; !oldUrlParams) {
+			return false;
+		}
+
+		if((!newUrlParams &amp;&amp; oldUrlParams) || (newUrlParams &amp;&amp; !oldUrlParams)) {
+			return true;
+		}
+
+		return newUrlParams[0].split("&amp;")[0] !== oldUrlParams[0].split("&amp;")[0];
+	}
+
+	function getResultDescription(result){
+		var description = null;
+		if(result.name != null)
+			description = result.name;
+		else if(result.primary != null)
+			description = result. primary;
+		else if(result.sec_title != null)
+			description = result.sec_title;
+		return description;
+	}
+
+	function trackSearchResultClicked(resultClicked, rank) {
+		if (!rank || rank &lt; 1) return ;
+		var c = $scope;
+		var query = _.get(c.data, 'q');
+		var results = _.get(c.data, 'results', []);
+		
+		var result = results.find(function(e) {
+			  return e.primary.trim() === resultClicked.trim();
+		});
+	
+		var sourceTable = result.table != null ? result.table : null;
+
+		var payloadObject = {
+			action: "GlideSPSearchAnalytics",
+			payload: {
+				query: query,
+				portal_id: c.portal.sys_id,
+				page_id: $scope.page &amp;&amp; $scope.page.id,
+				results_per_source: getSearchSources(c),
+				refinement_occurred: false,
+				browser_info: $window.navigator.userAgent,
+				location: {
+					latitude: $scope.latitude,
+					longitude: $scope.longitude
+				},
+				result_event_sys_id : result.sys_id,
+				label_description : getResultDescription(result),
+				source_table: sourceTable,
+				signal_type: "CLICK",
+				signal_value: rank
+			}
+		};
+
+		$window.spSearchAnalytics = {
+			query: query
+		};
+
+		c.server.get(payloadObject);
+	}
+	
+	// Event delegation for Updating click rank
+	$(".panel").on('click', '.result-item a', function(e) {
+		var index = $(e.currentTarget).parent().parent().data('index');
+		var resultClicked = e.currentTarget.innerText;
+		trackSearchResultClicked(resultClicked, index+1);
+	});
+	
+}]]&gt;&lt;/client_script&gt;&lt;controller_as/&gt;&lt;css&gt;a.question-tag {
+    color: #39739d;
+    background-color: #e1ecf4;
+    border: 1px solid #e1ecf4;
+    display: inline-block;
+    margin: 4px 4px 4px 0;
+    border-radius: 0;
+    text-align: center;
+    line-height: 1;
+    padding: .4em .5em;
+}
+
+.sc {
+  i.ta-icon, i.ta-img {
+    width: 30px;
+    height: 30px;
+    line-height: 20px;
+    background-size: contain;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    float:left;
+    padding-right: 8px;
+  }
+}
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function(scope) {
+	var lazyLoader = $injector.get("lazyLoader");
+	lazyLoader.putTemplates(scope.data.resultTemplates);
+}]]&gt;&lt;/link&gt;&lt;name&gt;Search Page&lt;/name&gt;&lt;option_schema&gt;[{"hint":"Show search result relative ranking","name":"show_score","section":"other","label":"Show score","type":"boolean"},{"hint":"Maximum number of search results when not specifying a search group (default 30)","name":"max_all","section":"Behavior","label":"Max results for All search","type":"integer"},{"hint":"Maximum number of search results when specifying a search group (default 15)","name":"max_group","section":"Behavior","label":"Max results for single search source","type":"integer"},{"name":"show_did_you_mean","default_value":"false","section":"Behavior","label":"Show Did You Mean","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[if (input &amp;&amp; input.action === "GlideSPSearchAnalytics") {
+	input.action = "";
+	var textSearchAnalytics = new GlideSPSearchAnalytics().publish(JSON.stringify(input.payload));
+	return ;
+}
+
+// populate the 'data' variable
+data.showPrices = $sp.showCatalogPrices();
+data.q = $sp.getParameter('q');
+data.t = $sp.getParameter('t');
+data.results = [];
+data.searchSources = [];
+data.searchSourceConfiguration = {};
+//Provide searchType, portal and page information for Service Portal search analytics
+data.searchType = "search";
+data.isLocationTrackerDisabled = gs.getProperty('glide.service_portal.disable_location_tracker');
+var pageId = $sp.getParameter('id');
+var pageGr = null;
+if (pageId)
+	pageGr = new GlideRecord('sp_page');
+if (pageGr &amp;&amp; pageGr.get('id', pageId))
+	data.page = pageGr.getUniqueValue();
+var portalRecord = $sp.getPortalRecord();
+data.portal = portalRecord &amp;&amp; portalRecord.getUniqueValue();
+
+options.show_did_you_mean = (options.show_did_you_mean == true || options.show_did_you_mean == "true");
+
+if (data.t)
+	data.limit = options.max_group || 15;
+else
+	data.limit = options.max_all || 30;
+
+//Gotta decide if we want to use the portal's sources, or use the defaults declared by
+//the sys property
+var useDefaultPortals;
+if (!$sp.getPortalRecord()) {
+	useDefaultPortals = true;
+} else {
+	var searchSourcesForPortalGR = new GlideRecord("m2m_sp_portal_search_source");
+	searchSourcesForPortalGR.addQuery("sp_portal", $sp.getPortalRecord().getUniqueValue());
+	searchSourcesForPortalGR.query();
+	useDefaultPortals = searchSourcesForPortalGR.getRowCount() == 0;
+}
+
+data.resultTemplates = {};
+
+if (useDefaultPortals) {
+	var defaultSearchSourceGR = new GlideRecord("sp_search_source");
+	var defaultSearchSourceIDList = gs.getProperty("glide.service_portal.default_search_sources", "");
+	defaultSearchSourceGR.addQuery("sys_id", "IN", defaultSearchSourceIDList);
+	if (data.t)
+		defaultSearchSourceGR.addQuery("id", data.t);
+	defaultSearchSourceGR.query();
+	while(defaultSearchSourceGR.next()) {
+		data.resultTemplates["sp-search-source-" + defaultSearchSourceGR.getValue("id") + ".html"] = $sp.translateTemplate(defaultSearchSourceGR.getValue("search_page_template"));
+		getResults(defaultSearchSourceGR);
+		var SearchSourceId = defaultSearchSourceGR.getValue("id");
+		data.searchSources.push(SearchSourceId);
+		data.searchSourceConfiguration[SearchSourceId] = defaultSearchSourceGR.getValue("sys_id");
+	}
+} else {
+	var m2mSearchSourceGR = new GlideRecord("m2m_sp_portal_search_source");
+	if (data.t)
+		m2mSearchSourceGR.addQuery("sp_search_source.id", data.t);
+	m2mSearchSourceGR.addQuery("sp_portal", $sp.getPortalRecord().getUniqueValue());
+	m2mSearchSourceGR.query();
+	while(m2mSearchSourceGR.next()) {
+		var searchSourceGR = m2mSearchSourceGR.getElement("sp_search_source").getRefRecord();
+		data.resultTemplates["sp-search-source-" + searchSourceGR.getValue("id") + ".html"] = $sp.translateTemplate(searchSourceGR.getValue("search_page_template"));
+		getResults(searchSourceGR);
+		var SearchSourceId = searchSourceGR.getValue("id");
+		data.searchSources.push(SearchSourceId);
+		data.searchSourceConfiguration[SearchSourceId] = searchSourceGR.getValue("sys_id");
+	}
+}
+
+function getResults(gr) {
+	//Check if the user is allowed to see this source.
+	if ($sp.isUserCriteriaEnabled()) {
+		if (!$sp.userCanSeeSearchSourceByCriteria(gr.getUniqueValue()))
+			return;
+	} else {
+		var gs = GlideSession.get();
+		var searchSourceRoles = gr.getValue("roles");
+		if (searchSourceRoles &amp;&amp; !gs.hasRole(searchSourceRoles))
+			return;
+	}
+
+	if (gr.is_scripted_source) {
+		var input = {};
+		input.query = data.q;
+		input.facets = {};
+		input.indexGroup = 'portal_index_group';
+		var evaluator = new GlideScopedEvaluator();
+		var results = evaluator.evaluateScript(gr, "data_fetch_script", input);
+		if(results) {
+			results.forEach(function(item) {
+				item.templateID = "sp-search-source-" + gr.getValue("id") + ".html";
+				data.results.push(item);
+			});
+		}
+	} else {
+		var primaryField = gr.getValue("primary_display_field");
+		var displayFields = gr.getValue("display_fields");
+
+		var resultGR = new GlideRecordSecure(gr.getValue("source_table"));
+		var condition = gr.getValue("condition");
+		if (condition)
+			resultGR.addEncodedQuery(condition);
+		if (data.q)
+			resultGR.addQuery('123TEXTQUERY321', data.q);
+		resultGR.query();
+
+		var searchTableCount = 0;
+		while (resultGR.next() &amp;&amp; searchTableCount &lt; data.limit) {
+			if (!resultGR.canRead())
+				continue;
+
+			var secondaryValues = [];
+
+			if (displayFields)
+				displayFields.split(",").forEach(function(field) {
+					var obj = getField(resultGR, field);
+					secondaryValues.push(obj);
+				});
+
+			data.results.push({
+				primary: (primaryField) ? resultGR.getValue(primaryField) : resultGR.getDisplayValue(),
+				sys_id: resultGR.getUniqueValue(),
+				table: resultGR.getTableName(),
+				templateID: "sp-search-source-" + gr.getValue("id") + ".html",
+				fields: secondaryValues,
+				type: gr.getValue("id")
+			});
+			searchTableCount++;
+		}
+	}
+
+	if (data.results.length == 0 &amp;&amp; options.show_did_you_mean) {
+		var didYouMean = new GlideTSDidYouMean();
+		var suggestions = [];
+		data.suggestions = [];
+		if (data.t == 'kb')
+			suggestions = didYouMean.getAlternatePhrases(data.q, 'kb_knowledge');
+		else if (data.t == 'sc')
+			suggestions = didYouMean.getAlternatePhrases(data.q, 'sc_cat_item');
+		else
+			suggestions = didYouMean.getAlternatePhrases(data.q, gr.getValue("source_table"));
+
+		for(var i=0; i&lt;suggestions.size(); i++) {
+			 if(data.suggestions.indexOf(suggestions.get(i) + '') == -1)
+					data.suggestions.push(suggestions.get(i) + '');
+		}
+	}
+}
+
+function getField(gr, name) {
+	var f = {};
+	f.display_value = gr.getDisplayValue(name);
+	f.value = gr.getValue(name);
+	var ge = gr.getElement(name);
+	if (ge == null)
+		return f;
+
+	f.type = ge.getED().getInternalType()
+	f.label = ge.getLabel();
+	return f;
+}
+]]&gt;&lt;/script&gt;&lt;servicenow&gt;true&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2015-06-03 23:17:49&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;b8c57073cb10020000f8d856634c9cfc&lt;/sys_id&gt;&lt;sys_mod_count&gt;583&lt;/sys_mod_count&gt;&lt;sys_name&gt;Search Page&lt;/sys_name&gt;&lt;sys_package display_value="Service Portal - Core" source="com.glide.service-portal"&gt;f637072bdbb20300786b766eaf9619cf&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_b8c57073cb10020000f8d856634c9cfc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-04-28 23:15:00&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+  &lt;div class="panel panel-default"&gt;
+    &lt;div ng-if="data.results.length==0"&gt;
+      &lt;div class="panel-heading"&gt;&lt;h2 class="h4 panel-title"&gt;${No results}&lt;/h2&gt;&lt;/div&gt;
+      &lt;div class="panel-body wrapper break-word"&gt;
+        &lt;p&gt;${Your search - &lt;b&gt;{{data.q}}&lt;/b&gt; - did not match any documents}&lt;/p&gt;
+        &lt;div ng-if="options.show_did_you_mean &amp;&amp; data.suggestions.length &gt; 0"&gt;
+          ${Did you mean}:
+          &lt;ul&gt;
+            &lt;li ng-repeat="term in ::data.suggestions track by $index"&gt;
+              &lt;a href="javascript:void(0)" ng-click="search(term)"&gt;{{::term}}&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;p ng-if="options.show_did_you_mean &amp;&amp; data.suggestions.length &gt; 0"&gt;${Other suggestions}:&lt;/p&gt;
+        &lt;p ng-if="!options.show_did_you_mean || data.suggestions.length == 0"&gt;${Suggestions}:&lt;/p&gt;
+        &lt;ul&gt;
+          &lt;li&gt;${Make sure all words are spelled correctly}&lt;/li&gt;
+          &lt;li&gt;${Try different, more general, or fewer keywords}&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div ng-if="data.results.length&gt;0" class="panel-heading break-word"&gt;
+      &lt;h2 class="h4 panel-title"&gt;${Search results for '{{data.q}}'}&lt;/h2&gt;
+    &lt;/div&gt;
+
+    &lt;div role="list" &gt;
+      &lt;div role="listitem" ng-repeat="item in data.results | orderBy:'-score' | limitTo:data.limit" class="panel-body b-b result-item"&gt;
+        &lt;div ng-include="item.templateID" data-index="{{$index}}"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload><sys_class_name>sp_rel_widget_clone</sys_class_name><sys_created_by>X228263</sys_created_by><sys_created_on>2021-01-21 13:13:39</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>a52dce5a1bf9e050cd3820a36b4bcb36</sys_id><sys_mod_count>0</sys_mod_count><sys_name>2d2d8a5a1bf9e050cd3820a36b4bcb24</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_rel_widget_clone_a52dce5a1bf9e050cd3820a36b4bcb36</sys_update_name><sys_updated_by>X228263</sys_updated_by><sys_updated_on>2021-01-21 13:13:39</sys_updated_on></sp_rel_widget_clone></record_update>]]></payload>
+<payload_hash>-1954242391</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>43d498b61bd6a45017cf0edacd4bcb9a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17725143f780000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name>2d2d8a5a1bf9e050cd3820a36b4bcb24</target_name>
+<type>Widget Clone</type>
+<update_domain>global</update_domain>
+<update_guid>e52dce5a29f9e0508284e71a58717838</update_guid>
+<update_guid_history>e52dce5a29f9e0508284e71a58717838:-1954242391</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_de927a1687330300a785940307cb0b23</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color/&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size/&gt;&lt;sp_column display_value="1"&gt;38927a1687330300a785940307cb0b20&lt;/sp_column&gt;&lt;sp_widget display_value="Faceted Search"&gt;12fbe2d287330300a785940307cb0b1b&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-01-24 00:55:56&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;de927a1687330300a785940307cb0b23&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Service Portal - Core" source="com.glide.service-portal"&gt;f637072bdbb20300786b766eaf9619cf&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_de927a1687330300a785940307cb0b23&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;X228264&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-01-21 14:41:05&lt;/sys_updated_on&gt;&lt;title/&gt;&lt;u_image/&gt;&lt;u_template/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"facet_list_title": {
+		"value": "${FILTERS}",
+		"displayValue": "${FILTERS}"
+	},
+	"max_all": {
+		"value": null,
+		"displayValue": "5"
+	},
+	"max_group": {
+		"value": null,
+		"displayValue": ""
+	},
+	"show_did_you_mean": {
+		"value": "false",
+		"displayValue": "false"
+	},
+	"title": {
+		"value": "",
+		"displayValue": ""
+	},
+	"color": {
+		"value": "",
+		"displayValue": ""
+	},
+	"glyph": {
+		"value": "",
+		"displayValue": ""
+	},
+	"size": {
+		"value": "",
+		"displayValue": ""
+	},
+	"limit": {
+		"value": null,
+		"displayValue": "5"
+	},
+	"show_typeahead_search": {
+		"value": "true",
+		"displayValue": "true"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=de927a1687330300a785940307cb0b23"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1569091785</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>47d498b61bd6a45017cf0edacd4bcb99</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>177256448a60000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>4e216e1e2cfde05041adc0466fa0e91b</update_guid>
+<update_guid_history>4e216e1e2cfde05041adc0466fa0e91b:-1569091785,155d96deaebde050457aa036a5c24e9f:-2062483888,5ec7de9af17de050c35abc50aaedbe8e:-1370062710,12c7de9af77de0506ac293a1e260db8d:1645417259</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_9c2de83edb792c50e2c70ad9f49619c7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="DELETE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>2</order><roles/><short_description/><size>md</size><sp_column display_value="1">45133982cb21020000f8d856634c9ca3</sp_column><sp_widget display_value="Language Nav">24e76036db792c50e2c70ad9f49619b7</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>X228264</sys_created_by><sys_created_on>2021-01-22 19:31:07</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>9c2de83edb792c50e2c70ad9f49619c7</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_9c2de83edb792c50e2c70ad9f49619c7</sys_update_name><sys_updated_by>X228264</sys_updated_by><sys_updated_on>2021-01-22 19:31:07</sys_updated_on><title/><u_image/><u_template/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=9c2de83edb792c50e2c70ad9f49619c7"/></record_update>]]></payload>
+<payload_hash>-2049748356</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>4bd498b61bd6a45017cf0edacd4bcb98</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>177312fc4850000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>f1045a8b4f7160905873906679e17549</update_guid>
+<update_guid_history>f1045a8b4f7160905873906679e17549:-2049748356,502de83eac792c50c8133310e28a50ca:308065776</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_update_set_7654ef54371012001394772a53990eb8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_update_set"><sys_update_set action="INSERT_OR_UPDATE"><application display_value="Global">global</application><base_update_set/><completed_by/><completed_on>2015-12-09 11:12:15</completed_on><description>Automatically created by the system</description><install_date/><installed_from/><is_default>true</is_default><merged_to/><name>Default</name><origin_sys_id/><parent/><release_date/><remote_sys_id/><state>in progress</state><sys_created_by>system</sys_created_by><sys_created_on>2015-12-09 11:12:15</sys_created_on><sys_id>7654ef54371012001394772a53990eb8</sys_id><sys_mod_count>7</sys_mod_count><sys_updated_by>X225412</sys_updated_by><sys_updated_on>2020-10-13 11:40:32</sys_updated_on></sys_update_set></record_update>]]></payload>
+<payload_hash>288786570</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>4bd498b61bd6a45017cf0edacd4bcb9b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>177ab13ab400000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name>Default</target_name>
+<type>Update Set</type>
+<update_domain>global</update_domain>
+<update_guid>dc0d8c7e2c56a4504d9005d119a593b3</update_guid>
+<update_guid_history>dc0d8c7e2c56a4504d9005d119a593b3:288786570</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_81233982cb21020000f8d856634c9ca7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">45133982cb21020000f8d856634c9ca3</sp_column><sp_widget display_value="Search Nav">81299142cb21020000f8d856634c9cc1</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2015-07-30 20:34:26</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>81233982cb21020000f8d856634c9ca7</sys_id><sys_mod_count>5</sys_mod_count><sys_name>Search Nav</sys_name><sys_package display_value="Service Portal - Core" source="com.glide.service-portal">f637072bdbb20300786b766eaf9619cf</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_81233982cb21020000f8d856634c9ca7</sys_update_name><sys_updated_by>X228263</sys_updated_by><sys_updated_on>2021-01-21 13:07:32</sys_updated_on><title>Search Nav</title><u_image/><u_template/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=81233982cb21020000f8d856634c9ca7"/><sys_translated_text action="INSERT_OR_UPDATE"><documentkey>81233982cb21020000f8d856634c9ca7</documentkey><fieldname>title</fieldname><language>de</language><sys_created_by>system</sys_created_by><sys_created_on>2017-12-09 09:22:39</sys_created_on><sys_id>d07da7a7db3a8300da85766eaf9619f8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2017-12-09 09:22:39</sys_updated_on><tablename>sp_instance</tablename><value>Suchnavigation</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey>81233982cb21020000f8d856634c9ca7</documentkey><fieldname>title</fieldname><language>es</language><sys_created_by>X157160</sys_created_by><sys_created_on>2019-08-03 16:39:35</sys_created_on><sys_id>4a8e5da9db03b700b348f1571d9619d9</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>X157160</sys_updated_by><sys_updated_on>2019-08-03 16:39:35</sys_updated_on><tablename>sp_instance</tablename><value>Navegación de búsqueda</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey>81233982cb21020000f8d856634c9ca7</documentkey><fieldname>title</fieldname><language>fr</language><sys_created_by>X157160</sys_created_by><sys_created_on>2019-08-03 11:45:09</sys_created_on><sys_id>452b5465db4bb300b348f1571d96192f</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>X157160</sys_updated_by><sys_updated_on>2019-08-03 11:45:09</sys_updated_on><tablename>sp_instance</tablename><value>Navigation de recherche</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey>81233982cb21020000f8d856634c9ca7</documentkey><fieldname>title</fieldname><language>it</language><sys_created_by>X157160</sys_created_by><sys_created_on>2019-08-03 14:17:41</sys_created_on><sys_id>e70e38e9db073700b348f1571d961956</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>X157160</sys_updated_by><sys_updated_on>2019-08-03 14:17:41</sys_updated_on><tablename>sp_instance</tablename><value>Cerca nav</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey>81233982cb21020000f8d856634c9ca7</documentkey><fieldname>title</fieldname><language>ja</language><sys_created_by>X157160</sys_created_by><sys_created_on>2019-08-03 19:05:01</sys_created_on><sys_id>a4df3965db0ff700b348f1571d961978</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>X157160</sys_updated_by><sys_updated_on>2019-08-03 19:05:01</sys_updated_on><tablename>sp_instance</tablename><value>検索ナビ</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey>81233982cb21020000f8d856634c9ca7</documentkey><fieldname>title</fieldname><language>ko</language><sys_created_by>anthony.rodenas</sys_created_by><sys_created_on>2019-08-19 06:55:41</sys_created_on><sys_id>c952f16edbd7fb40d2339455ca96199f</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2019-12-14 12:57:00</sys_updated_on><tablename>sp_instance</tablename><value>검색 탐색</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey>81233982cb21020000f8d856634c9ca7</documentkey><fieldname>title</fieldname><language>pt</language><sys_created_by>X157160</sys_created_by><sys_created_on>2019-08-03 21:36:51</sys_created_on><sys_id>e8922625db0b7b00b348f1571d96190a</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>X157160</sys_updated_by><sys_updated_on>2019-08-03 21:36:51</sys_updated_on><tablename>sp_instance</tablename><value>Navegação de Pesquisa</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey>81233982cb21020000f8d856634c9ca7</documentkey><fieldname>title</fieldname><language>th</language><sys_created_by>X157160</sys_created_by><sys_created_on>2019-08-04 00:01:54</sys_created_on><sys_id>21c30be9dbc3fb00b348f1571d9619c4</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>X157160</sys_updated_by><sys_updated_on>2019-08-04 00:01:54</sys_updated_on><tablename>sp_instance</tablename><value>คำสั่งนำทางการค้นหา</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey>81233982cb21020000f8d856634c9ca7</documentkey><fieldname>title</fieldname><language>zh</language><sys_created_by>X202445</sys_created_by><sys_created_on>2020-08-04 13:18:38</sys_created_on><sys_id>b800f62b1b12d85063ce32a99b4bcb7f</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>X202445</sys_updated_by><sys_updated_on>2020-08-04 13:18:38</sys_updated_on><tablename>sp_instance</tablename><value>搜索导航</value></sys_translated_text></record_update>]]></payload>
+<payload_hash>1603329279</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>4fd498b61bd6a45017cf0edacd4bcb97</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>177250ea43c0000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name>Search Nav</target_name>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>33bb82d631f9e0503b97746b6a8c2192</update_guid>
+<update_guid_history>33bb82d631f9e0503b97746b6a8c2192:1603329279,7bbb82d626f9e0504e047020d498608e:1626659006</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_100569fadb356c50e2c70ad9f49619c9</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;try&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;try&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;X228264&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-01-22 23:35:14&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;100569fadb356c50e2c70ad9f49619c9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;try&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_100569fadb356c50e2c70ad9f49619c9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;X228264&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-01-22 23:35:14&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;&lt;!-- your widget template --&gt;&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-19322098</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>4fd498b61bd6a45017cf0edacd4bcb9a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1772c73abf20000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name>try</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>dc052dfa54356c5077c79fa651dc05f3</update_guid>
+<update_guid_history>dc052dfa54356c5077c79fa651dc05f3:-19322098</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_d6c5a03adb392c50e2c70ad9f4961950</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="DELETE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>2</order><roles/><short_description/><size>md</size><sp_column display_value="1">637b87555b3212000d7ec7ad31f91a62</sp_column><sp_widget display_value="Commutateur de langue">af0f73105b0122000d7ec7ad31f91a27</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>X228264</sys_created_by><sys_created_on>2021-01-22 18:59:02</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>d6c5a03adb392c50e2c70ad9f4961950</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_d6c5a03adb392c50e2c70ad9f4961950</sys_update_name><sys_updated_by>X228264</sys_updated_by><sys_updated_on>2021-01-22 18:59:02</sys_updated_on><title/><u_image/><u_template/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=d6c5a03adb392c50e2c70ad9f4961950"/></record_update>]]></payload>
+<payload_hash>143966981</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>83d498b61bd6a45017cf0edacd4bcb99</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1772b774fbd0000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>62e5a4bae5392c50c3445f6082e67375</update_guid>
+<update_guid_history>62e5a4bae5392c50c3445f6082e67375:143966981,16c5a03ab4392c503cc384f202454652:-1584571754</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_98f5e8badb392c50e2c70ad9f4961934</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="DELETE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>2</order><roles/><short_description/><size>md</size><sp_column display_value="1">637b87555b3212000d7ec7ad31f91a62</sp_column><sp_widget display_value="Knowledge Language Facet">074be90453231300cc376512a2dc34ec</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>X228264</sys_created_by><sys_created_on>2021-01-22 18:59:42</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>98f5e8badb392c50e2c70ad9f4961934</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_98f5e8badb392c50e2c70ad9f4961934</sys_update_name><sys_updated_by>X228264</sys_updated_by><sys_updated_on>2021-01-22 18:59:42</sys_updated_on><title/><u_image/><u_template/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=98f5e8badb392c50e2c70ad9f4961934"/></record_update>]]></payload>
+<payload_hash>1636254297</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>87d498b61bd6a45017cf0edacd4bcb98</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1772b784cb20000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>5226643ea3392c5028805b9f020bfc76</update_guid>
+<update_guid_history>5226643ea3392c5028805b9f020bfc76:1636254297,94f5e8ba4a392c508bf6b948dd2a3339:-1816187076,94f5e8ba0d392c50c7d4302f6b048a37:239739141</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_4707ecbedb392c50e2c70ad9f496196f</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;language_picker&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;Language Picker&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;X228264&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-01-22 19:04:32&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;4707ecbedb392c50e2c70ad9f496196f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Language Picker&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_4707ecbedb392c50e2c70ad9f496196f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;X228264&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-01-22 19:04:32&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;&lt;!-- your widget template --&gt;&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>127520318</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>87d498b61bd6a45017cf0edacd4bcb9b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1772b7bd87b0000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name>Language Picker</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>0307ecbedf392c504e165a74bd91bc72</update_guid>
+<update_guid_history>0307ecbedf392c504e165a74bd91bc72:127520318</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_7f2cc21a1bf9e050cd3820a36b4bcb92</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="DELETE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>2</order><roles/><short_description/><size>md</size><sp_column display_value="1">45133982cb21020000f8d856634c9ca3</sp_column><sp_widget display_value="Search Nav">81299142cb21020000f8d856634c9cc1</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>X228263</sys_created_by><sys_created_on>2021-01-21 13:09:27</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>7f2cc21a1bf9e050cd3820a36b4bcb92</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_7f2cc21a1bf9e050cd3820a36b4bcb92</sys_update_name><sys_updated_by>X228263</sys_updated_by><sys_updated_on>2021-01-21 13:09:27</sys_updated_on><title/><u_image/><u_template/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=7f2cc21a1bf9e050cd3820a36b4bcb92"/></record_update>]]></payload>
+<payload_hash>1665851127</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>8bd498b61bd6a45017cf0edacd4bcb97</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1772b78e7de0000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>8456287ea8392c5095019597a0552a3a</update_guid>
+<update_guid_history>8456287ea8392c5095019597a0552a3a:1665851127,bb2cc21addf9e050cf3e5c4de9342194:-838955157</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_00f151141b8e289017cf0edacd4bcb0f</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function ($scope, $window, $location, spUtil, $rootScope) {
+	spUtil.setSearchPage($scope.data.t);
+	$scope.showScore = $scope.options.show_score == 'true' || $scope.options.show_score == true;
+	$scope.latitude = null;
+	$scope.longitude = null;
+	$scope.isLocationTrackerDisabled = $scope.data.isLocationTrackerDisabled === "true";
+
+	$scope.getBGImage = function(item) {
+		return {"background-image": "url('" + item.picture + "')"};
+	}
+
+	$scope.search = function(searchTerm) {
+		$location.search('q', searchTerm);
+	}
+
+	$scope.highlight = function(haystack, needle) {
+		if (!haystack)
+			return "";
+
+		if (!needle)
+			return haystack;
+
+		return haystack.replace(new RegExp(needle.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1"), "gi"), function(match) {
+			return '&lt;span class="highlight mark"&gt;' + match + '&lt;/span&gt;';
+		});
+	}
+
+	$scope.escapeHTML = function(value) {
+		var entityMap = {
+					"&amp;": "&amp;amp;",
+					"&lt;": "&amp;lt;",
+					"&gt;": "&amp;gt;",
+					'"': '&amp;quot;',
+					"'": '&amp;#39;',
+					"/": '&amp;#x2F;'
+				};
+		if (!value) return value;
+		value = String(value).replace(/[&amp;&lt;&gt;"'\/]/g, function (s) {
+        		return entityMap[s];
+        	});
+
+		return value;
+	}
+
+	function setUserLocationCoords(cb) {
+		var onSuccess = function(pos) {
+			return cb({
+				latitude: pos.coords.latitude,
+				longitude: pos.coords.longitude
+			})
+		};
+
+		var onError = function() {
+			return cb({
+				latitude: null,
+				longitude: null	
+			});
+		};
+
+		return window.navigator.geolocation.getCurrentPosition(onSuccess, onError, {
+			enableHighAccuracy: true
+		});
+	}
+
+	if(!$scope.isLocationTrackerDisabled){
+		setUserLocationCoords(function(coords) {
+			$scope.latitude = coords.latitude;
+			$scope.longitude = coords.longitude;
+			
+			// Track Search Event with Location coordinates
+			trackSearchEvent();
+
+		});
+	} else {
+		//Track Search Event without location coordinates
+		trackSearchEvent();
+	}
+	
+	function trackSearchEvent() {
+		var c = $scope;
+
+		var payload =  {
+			query: _.get(c, 'data.q'),
+			portal_id: _.get(c, 'portal.sys_id'),
+			page_id: _.get($window, 'spSearchAnalytics.page_id', c.page.id),
+			refinement_occurred: false, // refinement cannot occur in this widget since no facets are available
+			browser_info: $window.navigator.userAgent,
+			location: {
+				latitude: $scope.latitude,
+				longitude: $scope.longitude
+			},
+			search_results: getSearchResultsSignals($scope),
+			results_per_source: getSearchSources($scope)
+		}
+
+		var payloadObject = {
+			action: "GlideSPSearchAnalytics",
+			payload: payload
+		};
+		c.server.get(payloadObject);
+	}
+
+	function getSearchSources($scope) {
+		var c = $scope;
+		var sources = {};
+		if (c.data.t) {
+			sources[c.data.t] = 0;
+		}
+		else {
+			c.data.searchSources.map(function(key) {
+				sources[key] = 0;
+			});
+		}
+		$scope.data.results.map(function(item) {
+			var sourceId = _.get(item, 'type');
+			if (sources[sourceId])
+				sources[sourceId]++;
+			else
+				sources[sourceId] = 1;
+		});
+		var searchSources = [];
+		Object.keys(sources).map(function(key) {
+			var source_id = c.data.searchSourceConfiguration[key];
+			searchSources.push({
+				source_id: source_id,
+				number_of_results: sources[key]
+			});
+		});
+		return searchSources;
+	}
+
+	function getSearchResultsSignals($scope) {
+		return $scope.data.results.map(function(item) {
+			var recordId = item.sys_id;
+			var tableName = item.table;
+			
+			return {
+				record_id: recordId,
+				table_name: tableName
+			};
+		});
+	}
+
+	function pageChanged(newUrl, oldUrl) {
+		var newUrlParams = newUrl.match(/id=.+/),
+		oldUrlParams = oldUrl.match(/id=.+/);
+
+		if(!newUrlParams &amp;&amp; !oldUrlParams) {
+			return false;
+		}
+
+		if((!newUrlParams &amp;&amp; oldUrlParams) || (newUrlParams &amp;&amp; !oldUrlParams)) {
+			return true;
+		}
+
+		return newUrlParams[0].split("&amp;")[0] !== oldUrlParams[0].split("&amp;")[0];
+	}
+
+	function getResultDescription(result){
+		var description = null;
+		if(result.name != null)
+			description = result.name;
+		else if(result.primary != null)
+			description = result. primary;
+		else if(result.sec_title != null)
+			description = result.sec_title;
+		return description;
+	}
+
+	function trackSearchResultClicked(resultClicked, rank) {
+		if (!rank || rank &lt; 1) return ;
+		var c = $scope;
+		var query = _.get(c.data, 'q');
+		var results = _.get(c.data, 'results', []);
+		
+		var result = results.find(function(e) {
+			  return e.primary.trim() === resultClicked.trim();
+		});
+	
+		var sourceTable = result.table != null ? result.table : null;
+
+		var payloadObject = {
+			action: "GlideSPSearchAnalytics",
+			payload: {
+				query: query,
+				portal_id: c.portal.sys_id,
+				page_id: $scope.page &amp;&amp; $scope.page.id,
+				results_per_source: getSearchSources(c),
+				refinement_occurred: false,
+				browser_info: $window.navigator.userAgent,
+				location: {
+					latitude: $scope.latitude,
+					longitude: $scope.longitude
+				},
+				result_event_sys_id : result.sys_id,
+				label_description : getResultDescription(result),
+				source_table: sourceTable,
+				signal_type: "CLICK",
+				signal_value: rank
+			}
+		};
+
+		$window.spSearchAnalytics = {
+			query: query
+		};
+
+		c.server.get(payloadObject);
+	}
+	
+	// Event delegation for Updating click rank
+	$(".panel").on('click', '.result-item a', function(e) {
+		var index = $(e.currentTarget).parent().parent().data('index');
+		var resultClicked = e.currentTarget.innerText;
+		trackSearchResultClicked(resultClicked, index+1);
+	});
+
+                var c = this ;
+                c.submit = function() {                                                                                  
+                                c.server.update() ;
+                }
+													 }
+
+]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;a.question-tag {
+    color: #39739d;
+    background-color: #e1ecf4;
+    border: 1px solid #e1ecf4;
+    display: inline-block;
+    margin: 4px 4px 4px 0;
+    border-radius: 0;
+    text-align: center;
+    line-height: 1;
+    padding: .4em .5em;
+}
+
+.sc {
+  i.ta-icon, i.ta-img {
+    width: 30px;
+    height: 30px;
+    line-height: 20px;
+    background-size: contain;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    float:left;
+    padding-right: 8px;
+  }
+}
+
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;search_page_translation_2&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function(scope) {
+	var lazyLoader = $injector.get("lazyLoader");
+	lazyLoader.putTemplates(scope.data.resultTemplates);
+}]]&gt;&lt;/link&gt;&lt;name&gt;search page translation 2&lt;/name&gt;&lt;option_schema&gt;[{"hint":"Show search result relative ranking","name":"show_score","section":"other","label":"Show score","type":"boolean"},{"hint":"Maximum number of search results when not specifying a search group (default 30)","name":"max_all","section":"Behavior","label":"Max results for All search","type":"integer"},{"hint":"Maximum number of search results when specifying a search group (default 15)","name":"max_group","section":"Behavior","label":"Max results for single search source","type":"integer"},{"name":"show_did_you_mean","default_value":"false","section":"Behavior","label":"Show Did You Mean","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[if (input &amp;&amp; input.action === "GlideSPSearchAnalytics") {
+	input.action = "";
+	var textSearchAnalytics = new GlideSPSearchAnalytics().publish(JSON.stringify(input.payload));
+	return ;
+}
+	language = ['en'];
+  data.text_heading = "Hello World!" ;
+            if (input) {
+                  if(input.text_input.length &gt; 0) {
+                       gs.addInfoMessage("Your input text is: " + input.text_input) ;
+                       language = [input.text_input];
+									}
+   }
+
+
+	// populate the 'data' variable
+data.showPrices = $sp.showCatalogPrices();
+//data.q = $sp.getParameter('q');
+// data.q = 'TEST SEARCH'
+//data.languages = ["English","German","Spanish"]
+data.langvalues = ['en','es','de','it']
+var a= data.selectedVal
+console.log(input)
+console.log(data.langvalues)
+
+// start translate flow
+	try {
+		var inputs = {};
+		inputs['text'] = $sp.getParameter('q'); // String (Full UTF-8) 
+		inputs['target_languages'] = language
+		//////inputs['target_languages'] = ['es']; // Array.String 
+		//inputs['source_language'] = detected_language['code']; // String 
+		//inputs['additional_parameters'] = {}; // Array.Object 
+
+		// Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
+		// sn_fd.FlowAPI.getRunner().subflow('sn_ms_trans_spoke.translate_text_to_multiple_languages_v2').inBackground().withInputs(inputs).run();
+				
+		// Execute Synchronously: Run in foreground. Code snippet has access to outputs.
+		var result = sn_fd.FlowAPI.getRunner().subflow('sn_ms_trans_spoke.translate_text_to_multiple_languages_v2').inForeground().withInputs(inputs).run();
+		var outputs = result.getOutputs();
+
+		// Get Outputs:
+		// Note: outputs can only be retrieved when executing synchronously.
+		var translations = outputs['translations']; // Array.Object
+		var detected_language = outputs['detected_language']; // String
+		var status = outputs['status']; // Choice
+		var error_message = outputs['error_message']; // String
+		var error_code = outputs['error_code']; // String
+		
+	} catch (ex) {
+		var message = ex.getMessage();
+		gs.error(message);
+		console.log('error')
+}
+// end flow
+
+
+
+data.q = translations[0]['translated_text'];
+data.t = $sp.getParameter('t');
+data.results = [];
+data.searchSources = [];
+data.searchSourceConfiguration = {};
+//Provide searchType, portal and page information for Service Portal search analytics
+data.searchType = "search";
+data.isLocationTrackerDisabled = gs.getProperty('glide.service_portal.disable_location_tracker');
+var pageId = $sp.getParameter('id');
+var pageGr = null;
+if (pageId)
+	pageGr = new GlideRecord('sp_page');
+if (pageGr &amp;&amp; pageGr.get('id', pageId))
+	data.page = pageGr.getUniqueValue();
+var portalRecord = $sp.getPortalRecord();
+data.portal = portalRecord &amp;&amp; portalRecord.getUniqueValue();
+
+options.show_did_you_mean = (options.show_did_you_mean == true || options.show_did_you_mean == "true");
+
+if (data.t)
+	data.limit = options.max_group || 15;
+else
+	data.limit = options.max_all || 30;
+
+//Gotta decide if we want to use the portal's sources, or use the defaults declared by
+//the sys property
+var useDefaultPortals;
+if (!$sp.getPortalRecord()) {
+	useDefaultPortals = true;
+} else {
+	var searchSourcesForPortalGR = new GlideRecord("m2m_sp_portal_search_source");
+	searchSourcesForPortalGR.addQuery("sp_portal", $sp.getPortalRecord().getUniqueValue());
+	searchSourcesForPortalGR.query();
+	useDefaultPortals = searchSourcesForPortalGR.getRowCount() == 0;
+}
+
+data.resultTemplates = {};
+
+if (useDefaultPortals) {
+	var defaultSearchSourceGR = new GlideRecord("sp_search_source");
+	var defaultSearchSourceIDList = gs.getProperty("glide.service_portal.default_search_sources", "");
+	defaultSearchSourceGR.addQuery("sys_id", "IN", defaultSearchSourceIDList);
+	if (data.t)
+		defaultSearchSourceGR.addQuery("id", data.t);
+	defaultSearchSourceGR.query();
+	while(defaultSearchSourceGR.next()) {
+		data.resultTemplates["sp-search-source-" + defaultSearchSourceGR.getValue("id") + ".html"] = $sp.translateTemplate(defaultSearchSourceGR.getValue("search_page_template"));
+		getResults(defaultSearchSourceGR);
+		var SearchSourceId = defaultSearchSourceGR.getValue("id");
+		data.searchSources.push(SearchSourceId);
+		data.searchSourceConfiguration[SearchSourceId] = defaultSearchSourceGR.getValue("sys_id");
+	}
+} else {
+	var m2mSearchSourceGR = new GlideRecord("m2m_sp_portal_search_source");
+	if (data.t)
+		m2mSearchSourceGR.addQuery("sp_search_source.id", data.t);
+	m2mSearchSourceGR.addQuery("sp_portal", $sp.getPortalRecord().getUniqueValue());
+	m2mSearchSourceGR.query();
+	while(m2mSearchSourceGR.next()) {
+		var searchSourceGR = m2mSearchSourceGR.getElement("sp_search_source").getRefRecord();
+		data.resultTemplates["sp-search-source-" + searchSourceGR.getValue("id") + ".html"] = $sp.translateTemplate(searchSourceGR.getValue("search_page_template"));
+		getResults(searchSourceGR);
+		var SearchSourceId = searchSourceGR.getValue("id");
+		data.searchSources.push(SearchSourceId);
+		data.searchSourceConfiguration[SearchSourceId] = searchSourceGR.getValue("sys_id");
+	}
+}
+
+function getResults(gr) {
+	//Check if the user is allowed to see this source.
+	if ($sp.isUserCriteriaEnabled()) {
+		if (!$sp.userCanSeeSearchSourceByCriteria(gr.getUniqueValue()))
+			return;
+	} else {
+		var gs = GlideSession.get();
+		var searchSourceRoles = gr.getValue("roles");
+		if (searchSourceRoles &amp;&amp; !gs.hasRole(searchSourceRoles))
+			return;
+	}
+
+	if (gr.is_scripted_source) {
+		var input = {};
+		input.query = data.q;
+		input.facets = {};
+		input.indexGroup = 'portal_index_group';
+		var evaluator = new GlideScopedEvaluator();
+		var results = evaluator.evaluateScript(gr, "data_fetch_script", input);
+		if(results) {
+			results.forEach(function(item) {
+				item.templateID = "sp-search-source-" + gr.getValue("id") + ".html";
+				data.results.push(item);
+			});
+		}
+	} else {
+		var primaryField = gr.getValue("primary_display_field");
+		var displayFields = gr.getValue("display_fields");
+
+		var resultGR = new GlideRecordSecure(gr.getValue("source_table"));
+		var condition = gr.getValue("condition");
+		if (condition)
+			resultGR.addEncodedQuery(condition);
+		if (data.q)
+			resultGR.addQuery('123TEXTQUERY321', data.q);
+		resultGR.query();
+
+		var searchTableCount = 0;
+		while (resultGR.next() &amp;&amp; searchTableCount &lt; data.limit) {
+			if (!resultGR.canRead())
+				continue;
+
+			var secondaryValues = [];
+
+			if (displayFields)
+				displayFields.split(",").forEach(function(field) {
+					var obj = getField(resultGR, field);
+					secondaryValues.push(obj);
+				});
+
+			data.results.push({
+				primary: (primaryField) ? resultGR.getValue(primaryField) : resultGR.getDisplayValue(),
+				sys_id: resultGR.getUniqueValue(),
+				table: resultGR.getTableName(),
+				templateID: "sp-search-source-" + gr.getValue("id") + ".html",
+				fields: secondaryValues,
+				type: gr.getValue("id")
+			});
+			searchTableCount++;
+		}
+	}
+
+	if (data.results.length == 0 &amp;&amp; options.show_did_you_mean) {
+		var didYouMean = new GlideTSDidYouMean();
+		var suggestions = [];
+		data.suggestions = [];
+		if (data.t == 'kb')
+			suggestions = didYouMean.getAlternatePhrases(data.q, 'kb_knowledge');
+		else if (data.t == 'sc')
+			suggestions = didYouMean.getAlternatePhrases(data.q, 'sc_cat_item');
+		else
+			suggestions = didYouMean.getAlternatePhrases(data.q, gr.getValue("source_table"));
+
+		for(var i=0; i&lt;suggestions.size(); i++) {
+			 if(data.suggestions.indexOf(suggestions.get(i) + '') == -1)
+					data.suggestions.push(suggestions.get(i) + '');
+		}
+	}
+}
+
+function getField(gr, name) {
+	var f = {};
+	f.display_value = gr.getDisplayValue(name);
+	f.value = gr.getValue(name);
+	var ge = gr.getElement(name);
+	if (ge == null)
+		return f;
+
+	f.type = ge.getED().getInternalType()
+	f.label = ge.getLabel();
+	return f;
+}
+]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;X228263&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-01-27 14:02:49&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;00f151141b8e289017cf0edacd4bcb0f&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;search page translation 2&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_00f151141b8e289017cf0edacd4bcb0f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;X228263&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-01-27 14:13:46&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+
+  &lt;h1&gt;{{c.data.text_heading}}&lt;/h1&gt;
+
+  &lt;label&gt;${Text} &lt;/label&gt;
+
+  &lt;input type="text" ng-model="c.data.text_input"/&gt;
+
+  &lt;button type="submit" name="submit"
+
+          class="btn btn-primary btn-block"
+
+          ng-click="c.submit()"&gt;${Submit}&lt;/button&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;span&gt;You selected: &lt;/span&gt;&lt;b&gt;{{selectedVal}}&lt;/b&gt;&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;div class="panel panel-default"&gt;
+    &lt;div ng-if="data.results.length==0"&gt;
+      &lt;div class="panel-heading"&gt;&lt;h2 class="h4 panel-title"&gt;${No results}&lt;/h2&gt;&lt;/div&gt;
+      &lt;div class="panel-body wrapper break-word"&gt;
+        &lt;p&gt;${Your search - &lt;b&gt;{{data.q}}&lt;/b&gt; - did not match any documents}&lt;/p&gt;
+        &lt;div ng-if="options.show_did_you_mean &amp;&amp; data.suggestions.length &gt; 0"&gt;
+          ${Did you mean}:
+          &lt;ul&gt;
+            &lt;li ng-repeat="term in ::data.suggestions track by $index"&gt;
+              &lt;a href="javascript:void(0)" ng-click="search(term)"&gt;{{::term}}&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;p ng-if="options.show_did_you_mean &amp;&amp; data.suggestions.length &gt; 0"&gt;${Other suggestions}:&lt;/p&gt;
+        &lt;p ng-if="!options.show_did_you_mean || data.suggestions.length == 0"&gt;${Suggestions}:&lt;/p&gt;
+        &lt;ul&gt;
+          &lt;li&gt;${Make sure all words are spelled correctly}&lt;/li&gt;
+          &lt;li&gt;${Try different, more general, or fewer keywords}&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div ng-if="data.results.length&gt;0" class="panel-heading break-word"&gt;
+      &lt;h2 class="h4 panel-title"&gt;${Search results for '{{data.q}}'}&lt;/h2&gt;
+    &lt;/div&gt;
+
+    &lt;div role="list" &gt;
+      &lt;div role="listitem" ng-repeat="item in data.results | orderBy:'-score' | limitTo:data.limit" class="panel-body b-b result-item"&gt;
+        &lt;div ng-include="item.templateID" data-index="{{$index}}"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1726945539</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>8bd498b61bd6a45017cf0edacd4bcb9a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1774431706d0000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name>search page translation 2</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>a4745d5081ce289019ebcb41cbc87bd0</update_guid>
+<update_guid_history>a4745d5081ce289019ebcb41cbc87bd0:1726945539,29939d508dce28903aacca42e04be79e:114248711,81c2d91cb48e2890b44844d2ab781d8d:-719971050,84f1d51c978e2890691e92b205ad4004:-46916320</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_099bcb155b3212000d7ec7ad31f91a62</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">637b87555b3212000d7ec7ad31f91a62</sp_column><sp_widget display_value="breadcrumbs">0fb269305b3212000d7ec7ad31f91ae2</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2016-04-14 18:34:54</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>099bcb155b3212000d7ec7ad31f91a62</sys_id><sys_mod_count>2</sys_mod_count><sys_name/><sys_package display_value="Service Portal - Core" source="com.glide.service-portal">f637072bdbb20300786b766eaf9619cf</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_099bcb155b3212000d7ec7ad31f91a62</sys_update_name><sys_updated_by>X228263</sys_updated_by><sys_updated_on>2021-01-21 13:07:32</sys_updated_on><title/><u_image/><u_template/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=099bcb155b3212000d7ec7ad31f91a62"/></record_update>]]></payload>
+<payload_hash>-945690262</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>8fd498b61bd6a45017cf0edacd4bcb96</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>177250ea35c0000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>f3bbc6964ff9e0501551838c522e1ab1</update_guid>
+<update_guid_history>f3bbc6964ff9e0501551838c522e1ab1:-945690262,f3bbc69604f9e0500350fd3cdf04deaf:1048620009</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_rel_widget_clone_68e7ac76db792c50e2c70ad9f4961970</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone"><sp_rel_widget_clone action="INSERT_OR_UPDATE"><child display_value="Language Nav">24e76036db792c50e2c70ad9f49619b7</child><cloned>2021-01-22 19:08:11</cloned><last_validated>2021-01-22 19:08:11</last_validated><parent display_value="Search Nav">81299142cb21020000f8d856634c9cc1</parent><payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;standard&lt;/category&gt;&lt;client_script/&gt;&lt;controller_as/&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Search Nav&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[// populate the 'data' object
+data.t = $sp.getParameter('t');
+data.q = encodeURIComponent($sp.getParameter('q'));
+data.searchSources = [];
+
+//Gotta decide if we want to use the portal's sources, or use the defaults declared by
+//the sys property
+var useDefaultPortals;
+if (!$sp.getPortalRecord()) {
+	useDefaultPortals = true;
+} else {
+	var searchSourcesForPortalGR = new GlideRecord("m2m_sp_portal_search_source");
+	searchSourcesForPortalGR.addQuery("sp_portal", $sp.getPortalRecord().getUniqueValue());
+	searchSourcesForPortalGR.query();
+	useDefaultPortals = searchSourcesForPortalGR.getRowCount() == 0;
+}
+
+if (useDefaultPortals) {
+	var defaultSearchSourceGR = new GlideRecord("sp_search_source");
+	var defaultSearchSourceIDList = gs.getProperty("glide.service_portal.default_search_sources", "");
+	defaultSearchSourceGR.addQuery("sys_id", "IN", defaultSearchSourceIDList);
+	defaultSearchSourceGR.query();
+	while(defaultSearchSourceGR.next()) {
+		if (!userCanSeeSearchSource(defaultSearchSourceGR))
+			continue;
+
+		data.searchSources.push({
+			name: defaultSearchSourceGR.getDisplayValue("name"),
+			id: defaultSearchSourceGR.getValue("id"),
+			order: defaultSearchSourceIDList.split(",").indexOf(defaultSearchSourceGR.getUniqueValue())
+		});
+	}
+} else {
+	var m2mSearchSourceGR = new GlideRecord("m2m_sp_portal_search_source");
+	m2mSearchSourceGR.addQuery("sp_portal", $sp.getPortalRecord().getUniqueValue());
+	m2mSearchSourceGR.orderBy('order');
+	m2mSearchSourceGR.query();
+	var index = 0;
+	while(m2mSearchSourceGR.next()) {
+		var searchSourceGR = m2mSearchSourceGR.getElement("sp_search_source").getRefRecord();
+
+		if (!userCanSeeSearchSource(searchSourceGR))
+			continue;
+
+		data.searchSources.push({
+			name: searchSourceGR.getDisplayValue("name"),
+			id: searchSourceGR.getValue("id"),
+			order: index
+		});
+		index += 1;
+	}
+}
+
+function userCanSeeSearchSource(sourceGR) {
+	if ($sp.isUserCriteriaEnabled())
+		return $sp.userCanSeeSearchSourceByCriteria(sourceGR.getUniqueValue());
+	else {
+		var gs = GlideSession.get();
+		var searchSourceRoles = sourceGR.getValue("roles");
+		if (searchSourceRoles &amp;&amp; !gs.hasRole(searchSourceRoles))
+			return false;
+
+		return true;
+	}
+}]]&gt;&lt;/script&gt;&lt;servicenow&gt;true&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2015-07-30 18:41:58&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;81299142cb21020000f8d856634c9cc1&lt;/sys_id&gt;&lt;sys_mod_count&gt;97&lt;/sys_mod_count&gt;&lt;sys_name&gt;Search Nav&lt;/sys_name&gt;&lt;sys_package display_value="Service Portal - Core" source="com.glide.service-portal"&gt;f637072bdbb20300786b766eaf9619cf&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_81299142cb21020000f8d856634c9cc1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-01-09 16:00:26&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;h2 class="sr-only"&gt;${Search Categories}&lt;/h2&gt;
+
+&lt;div role="list" class="list-group"&gt;
+	  &lt;a role="link" ng-class="{active: !data.t}" class="list-group-item"
+       ng-href="?id=search&amp;q={{data.q}}" aria-label="${All search results}"&gt;
+	    &lt;i class="fa fa-chevron-right"/&gt;&lt;span class="m-l-sm"&gt;${All}&lt;/span&gt;
+  	&lt;/a&gt;
+	  &lt;a role="link" ng-repeat="source in data.searchSources | orderBy:'order'"
+	     ng-href="?id=search&amp;t={{source.id}}&amp;q={{data.q}}"
+	     ng-class="{active: data.t==source.id}"
+	     class="list-group-item" aria-label="{{(data.t==source.id) ? '${Current page},' : ''}} {{source.name}} ${Search results}"&gt;
+	  	&lt;i class="fa fa-chevron-right"/&gt;&lt;span class="m-l-sm"&gt;{{source.name}}&lt;/span&gt;
+  	&lt;/a&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload><sys_class_name>sp_rel_widget_clone</sys_class_name><sys_created_by>X228264</sys_created_by><sys_created_on>2021-01-22 19:08:11</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>68e7ac76db792c50e2c70ad9f4961970</sys_id><sys_mod_count>0</sys_mod_count><sys_name>24e76036db792c50e2c70ad9f49619b7</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_rel_widget_clone_68e7ac76db792c50e2c70ad9f4961970</sys_update_name><sys_updated_by>X228264</sys_updated_by><sys_updated_on>2021-01-22 19:08:11</sys_updated_on></sp_rel_widget_clone></record_update>]]></payload>
+<payload_hash>1054345751</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>8fd498b61bd6a45017cf0edacd4bcb99</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1772b7f301e0000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name>24e76036db792c50e2c70ad9f49619b7</target_name>
+<type>Widget Clone</type>
+<update_domain>global</update_domain>
+<update_guid>e8e7ac76b6792c50973da96f68a29672</update_guid>
+<update_guid_history>e8e7ac76b6792c50973da96f68a29672:1054345751</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_a2f3a83edbb52c50e2c70ad9f49619f1</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="DELETE"><class_name/><order>1</order><size>6</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">a2f3a83edbb52c50e2c70ad9f49619ed</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>X228264</sys_created_by><sys_created_on>2021-01-22 18:51:07</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>a2f3a83edbb52c50e2c70ad9f49619f1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_a2f3a83edbb52c50e2c70ad9f49619f1</sys_update_name><sys_updated_by>X228264</sys_updated_by><sys_updated_on>2021-01-22 18:51:07</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>1818303995</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>c3d498b61bd6a45017cf0edacd4bcb96</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1772b6fd32c0000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid>760468ba75b52c505911b539e81b4bc2</update_guid>
+<update_guid_history>760468ba75b52c505911b539e81b4bc2:1818303995,22f3a83eccb52c50f2a1430533997ff3:-309494393</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_92c7de9a1b7de050cd3820a36b4bcb93</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color/&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;2&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size/&gt;&lt;sp_column display_value="1"&gt;38927a1687330300a785940307cb0b20&lt;/sp_column&gt;&lt;sp_widget display_value="Faceted Search"&gt;12fbe2d287330300a785940307cb0b1b&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;X228264&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-01-21 14:00:07&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;92c7de9a1b7de050cd3820a36b4bcb93&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_92c7de9a1b7de050cd3820a36b4bcb93&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;X228264&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-01-21 14:43:37&lt;/sys_updated_on&gt;&lt;title/&gt;&lt;u_image/&gt;&lt;u_template/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"max_all": {
+		"value": null,
+		"displayValue": "5"
+	},
+	"max_group": {
+		"value": null,
+		"displayValue": ""
+	},
+	"show_did_you_mean": {
+		"value": "false",
+		"displayValue": "false"
+	},
+	"facet_list_title": {
+		"value": "${FILTERS}",
+		"displayValue": "${FILTERS}"
+	},
+	"title": {
+		"value": "",
+		"displayValue": ""
+	},
+	"color": {
+		"value": "",
+		"displayValue": ""
+	},
+	"glyph": {
+		"value": "",
+		"displayValue": ""
+	},
+	"size": {
+		"value": "",
+		"displayValue": ""
+	},
+	"limit": {
+		"value": null,
+		"displayValue": ""
+	},
+	"show_typeahead_search": {
+		"value": "true",
+		"displayValue": "true"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=92c7de9a1b7de050cd3820a36b4bcb93"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>2004864167</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>c3d498b61bd6a45017cf0edacd4bcb98</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17725669b520000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>1fb1ae52b2312450ad4c19c254f863fc</update_guid>
+<update_guid_history>1fb1ae52b2312450ad4c19c254f863fc:2004864167,6261e2debafde05063b3f8b05a5faeaf:-1326767169,2111aa5ec1fde0506c6d449616978a3a:2004864167,49b0ee1e9bfde050be334aecab51081c:1040842909,12c7de9abb7de05027d882a700bbc495:-92956563</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_2d2d8a5a1bf9e050cd3820a36b4bcb24</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function ($scope, $window, $location, spUtil, $rootScope) {
+	spUtil.setSearchPage($scope.data.t);
+	$scope.showScore = $scope.options.show_score == 'true' || $scope.options.show_score == true;
+	$scope.latitude = null;
+	$scope.longitude = null;
+	$scope.isLocationTrackerDisabled = $scope.data.isLocationTrackerDisabled === "true";
+
+	$scope.getBGImage = function(item) {
+		return {"background-image": "url('" + item.picture + "')"};
+	}
+
+	$scope.search = function(searchTerm) {
+		$location.search('q', searchTerm);
+	}
+
+	$scope.highlight = function(haystack, needle) {
+		if (!haystack)
+			return "";
+
+		if (!needle)
+			return haystack;
+
+		return haystack.replace(new RegExp(needle.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1"), "gi"), function(match) {
+			return '&lt;span class="highlight mark"&gt;' + match + '&lt;/span&gt;';
+		});
+	}
+
+	$scope.escapeHTML = function(value) {
+		var entityMap = {
+					"&amp;": "&amp;amp;",
+					"&lt;": "&amp;lt;",
+					"&gt;": "&amp;gt;",
+					'"': '&amp;quot;',
+					"'": '&amp;#39;',
+					"/": '&amp;#x2F;'
+				};
+		if (!value) return value;
+		value = String(value).replace(/[&amp;&lt;&gt;"'\/]/g, function (s) {
+        		return entityMap[s];
+        	});
+
+		return value;
+	}
+
+	function setUserLocationCoords(cb) {
+		var onSuccess = function(pos) {
+			return cb({
+				latitude: pos.coords.latitude,
+				longitude: pos.coords.longitude
+			})
+		};
+
+		var onError = function() {
+			return cb({
+				latitude: null,
+				longitude: null	
+			});
+		};
+
+		return window.navigator.geolocation.getCurrentPosition(onSuccess, onError, {
+			enableHighAccuracy: true
+		});
+	}
+
+	if(!$scope.isLocationTrackerDisabled){
+		setUserLocationCoords(function(coords) {
+			$scope.latitude = coords.latitude;
+			$scope.longitude = coords.longitude;
+			
+			// Track Search Event with Location coordinates
+			trackSearchEvent();
+
+		});
+	} else {
+		//Track Search Event without location coordinates
+		trackSearchEvent();
+	}
+	
+	function trackSearchEvent() {
+		var c = $scope;
+
+		var payload =  {
+			query: _.get(c, 'data.q'),
+			portal_id: _.get(c, 'portal.sys_id'),
+			page_id: _.get($window, 'spSearchAnalytics.page_id', c.page.id),
+			refinement_occurred: false, // refinement cannot occur in this widget since no facets are available
+			browser_info: $window.navigator.userAgent,
+			location: {
+				latitude: $scope.latitude,
+				longitude: $scope.longitude
+			},
+			search_results: getSearchResultsSignals($scope),
+			results_per_source: getSearchSources($scope)
+		}
+
+		var payloadObject = {
+			action: "GlideSPSearchAnalytics",
+			payload: payload
+		};
+		c.server.get(payloadObject);
+	}
+
+	function getSearchSources($scope) {
+		var c = $scope;
+		var sources = {};
+		if (c.data.t) {
+			sources[c.data.t] = 0;
+		}
+		else {
+			c.data.searchSources.map(function(key) {
+				sources[key] = 0;
+			});
+		}
+		$scope.data.results.map(function(item) {
+			var sourceId = _.get(item, 'type');
+			if (sources[sourceId])
+				sources[sourceId]++;
+			else
+				sources[sourceId] = 1;
+		});
+		var searchSources = [];
+		Object.keys(sources).map(function(key) {
+			var source_id = c.data.searchSourceConfiguration[key];
+			searchSources.push({
+				source_id: source_id,
+				number_of_results: sources[key]
+			});
+		});
+		return searchSources;
+	}
+
+	function getSearchResultsSignals($scope) {
+		return $scope.data.results.map(function(item) {
+			var recordId = item.sys_id;
+			var tableName = item.table;
+			
+			return {
+				record_id: recordId,
+				table_name: tableName
+			};
+		});
+	}
+
+	function pageChanged(newUrl, oldUrl) {
+		var newUrlParams = newUrl.match(/id=.+/),
+		oldUrlParams = oldUrl.match(/id=.+/);
+
+		if(!newUrlParams &amp;&amp; !oldUrlParams) {
+			return false;
+		}
+
+		if((!newUrlParams &amp;&amp; oldUrlParams) || (newUrlParams &amp;&amp; !oldUrlParams)) {
+			return true;
+		}
+
+		return newUrlParams[0].split("&amp;")[0] !== oldUrlParams[0].split("&amp;")[0];
+	}
+
+	function getResultDescription(result){
+		var description = null;
+		if(result.name != null)
+			description = result.name;
+		else if(result.primary != null)
+			description = result. primary;
+		else if(result.sec_title != null)
+			description = result.sec_title;
+		return description;
+	}
+
+	function trackSearchResultClicked(resultClicked, rank) {
+		if (!rank || rank &lt; 1) return ;
+		var c = $scope;
+		var query = _.get(c.data, 'q');
+		var results = _.get(c.data, 'results', []);
+		
+		var result = results.find(function(e) {
+			  return e.primary.trim() === resultClicked.trim();
+		});
+	
+		var sourceTable = result.table != null ? result.table : null;
+
+		var payloadObject = {
+			action: "GlideSPSearchAnalytics",
+			payload: {
+				query: query,
+				portal_id: c.portal.sys_id,
+				page_id: $scope.page &amp;&amp; $scope.page.id,
+				results_per_source: getSearchSources(c),
+				refinement_occurred: false,
+				browser_info: $window.navigator.userAgent,
+				location: {
+					latitude: $scope.latitude,
+					longitude: $scope.longitude
+				},
+				result_event_sys_id : result.sys_id,
+				label_description : getResultDescription(result),
+				source_table: sourceTable,
+				signal_type: "CLICK",
+				signal_value: rank
+			}
+		};
+
+		$window.spSearchAnalytics = {
+			query: query
+		};
+
+		c.server.get(payloadObject);
+	}
+	
+	// Event delegation for Updating click rank
+	$(".panel").on('click', '.result-item a', function(e) {
+		var index = $(e.currentTarget).parent().parent().data('index');
+		var resultClicked = e.currentTarget.innerText;
+		trackSearchResultClicked(resultClicked, index+1);
+	});
+
+	var c = this ;
+                c.submit = function() {                                                                                  
+                                c.server.update() ;
+                }
+
+													 }
+
+]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;a.question-tag {
+    color: #39739d;
+    background-color: #e1ecf4;
+    border: 1px solid #e1ecf4;
+    display: inline-block;
+    margin: 4px 4px 4px 0;
+    border-radius: 0;
+    text-align: center;
+    line-height: 1;
+    padding: .4em .5em;
+}
+
+.sc {
+  i.ta-icon, i.ta-img {
+    width: 30px;
+    height: 30px;
+    line-height: 20px;
+    background-size: contain;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    float:left;
+    padding-right: 8px;
+  }
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #482D83;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+  text-align: left
+}
+
+/* The container &amp;lt;div&amp;gt; - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 100%;
+}
+
+/* Links inside the dropdown */
+.dropdown-content select {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content select:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #eb3c96;}
+
+/* Making the dropdown menu bold */
+option{
+    font-weight: bold;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;search_page_translation&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function(scope) {
+	var lazyLoader = $injector.get("lazyLoader");
+	lazyLoader.putTemplates(scope.data.resultTemplates);
+}]]&gt;&lt;/link&gt;&lt;name&gt;search page translation&lt;/name&gt;&lt;option_schema&gt;[{"hint":"Show search result relative ranking","name":"show_score","section":"other","label":"Show score","type":"boolean"},{"hint":"Maximum number of search results when not specifying a search group (default 30)","name":"max_all","section":"Behavior","label":"Max results for All search","type":"integer"},{"hint":"Maximum number of search results when specifying a search group (default 15)","name":"max_group","section":"Behavior","label":"Max results for single search source","type":"integer"},{"name":"show_did_you_mean","default_value":"false","section":"Behavior","label":"Show Did You Mean","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[if (input &amp;&amp; input.action === "GlideSPSearchAnalytics") {
+	input.action = "";
+	var textSearchAnalytics = new GlideSPSearchAnalytics().publish(JSON.stringify(input.payload));
+	return ;
+}
+	language = ['en'];
+            if (input) {
+                  if(input.text_input.length &gt; 0) {
+                       //gs.addInfoMessage("Your input text is: " + input.text_input) ;
+                       language = [input.text_input];
+									}
+   }
+
+// populate the 'data' variable
+data.showPrices = $sp.showCatalogPrices();
+//data.q = $sp.getParameter('q');
+data.langvalues = ['English','Spanish','German','Italian', 'Chinese', 'Hindi'];
+									 switch (String(language)) {
+  case 'English':
+    language = 'en';
+    break;
+  case 'Spanish':
+    language = 'es';
+    break;
+  case 'German':
+    language = 'de';
+    break;
+  case 'Italian':
+    language = 'it';
+    break;
+	case 'Chinese':
+    language = 'zh';
+    break;
+	case 'Hindi':
+    language = 'hi';
+    break;										 
+  default:
+language = 'en';
+    break;
+}
+//data.langvalues = ['en','es','de','it']
+
+// start translate flow
+	try {
+		var inputs = {};
+		inputs['text'] = $sp.getParameter('q'); // String (Full UTF-8) 
+		inputs['target_languages'] = [language]
+		//////inputs['target_languages'] = ['es']; // Array.String 
+		//inputs['source_language'] = detected_language['code']; // String 
+		//inputs['additional_parameters'] = {}; // Array.Object 
+
+		// Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
+		// sn_fd.FlowAPI.getRunner().subflow('sn_ms_trans_spoke.translate_text_to_multiple_languages_v2').inBackground().withInputs(inputs).run();
+				
+		// Execute Synchronously: Run in foreground. Code snippet has access to outputs.
+		var result = sn_fd.FlowAPI.getRunner().subflow('sn_ms_trans_spoke.translate_text_to_multiple_languages_v2').inForeground().withInputs(inputs).run();
+		var outputs = result.getOutputs();
+
+		// Get Outputs:
+		// Note: outputs can only be retrieved when executing synchronously.
+		var translations = outputs['translations']; // Array.Object
+		var detected_language = outputs['detected_language']; // String
+		var status = outputs['status']; // Choice
+		var error_message = outputs['error_message']; // String
+		var error_code = outputs['error_code']; // String
+		
+	} catch (ex) {
+		var message = ex.getMessage();
+		gs.error(message);
+		console.log('error')
+}
+// end flow
+
+
+
+data.q = translations[0]['translated_text'];
+data.t = $sp.getParameter('t');
+data.results = [];
+data.searchSources = [];
+data.searchSourceConfiguration = {};
+//Provide searchType, portal and page information for Service Portal search analytics
+data.searchType = "search";
+data.isLocationTrackerDisabled = gs.getProperty('glide.service_portal.disable_location_tracker');
+var pageId = $sp.getParameter('id');
+var pageGr = null;
+if (pageId)
+	pageGr = new GlideRecord('sp_page');
+if (pageGr &amp;&amp; pageGr.get('id', pageId))
+	data.page = pageGr.getUniqueValue();
+var portalRecord = $sp.getPortalRecord();
+data.portal = portalRecord &amp;&amp; portalRecord.getUniqueValue();
+
+options.show_did_you_mean = (options.show_did_you_mean == true || options.show_did_you_mean == "true");
+
+if (data.t)
+	data.limit = options.max_group || 15;
+else
+	data.limit = options.max_all || 30;
+
+//Gotta decide if we want to use the portal's sources, or use the defaults declared by
+//the sys property
+var useDefaultPortals;
+if (!$sp.getPortalRecord()) {
+	useDefaultPortals = true;
+} else {
+	var searchSourcesForPortalGR = new GlideRecord("m2m_sp_portal_search_source");
+	searchSourcesForPortalGR.addQuery("sp_portal", $sp.getPortalRecord().getUniqueValue());
+	searchSourcesForPortalGR.query();
+	useDefaultPortals = searchSourcesForPortalGR.getRowCount() == 0;
+}
+
+data.resultTemplates = {};
+
+if (useDefaultPortals) {
+	var defaultSearchSourceGR = new GlideRecord("sp_search_source");
+	var defaultSearchSourceIDList = gs.getProperty("glide.service_portal.default_search_sources", "");
+	defaultSearchSourceGR.addQuery("sys_id", "IN", defaultSearchSourceIDList);
+	if (data.t)
+		defaultSearchSourceGR.addQuery("id", data.t);
+	defaultSearchSourceGR.query();
+	while(defaultSearchSourceGR.next()) {
+		data.resultTemplates["sp-search-source-" + defaultSearchSourceGR.getValue("id") + ".html"] = $sp.translateTemplate(defaultSearchSourceGR.getValue("search_page_template"));
+		getResults(defaultSearchSourceGR);
+		var SearchSourceId = defaultSearchSourceGR.getValue("id");
+		data.searchSources.push(SearchSourceId);
+		data.searchSourceConfiguration[SearchSourceId] = defaultSearchSourceGR.getValue("sys_id");
+	}
+} else {
+	var m2mSearchSourceGR = new GlideRecord("m2m_sp_portal_search_source");
+	if (data.t)
+		m2mSearchSourceGR.addQuery("sp_search_source.id", data.t);
+	m2mSearchSourceGR.addQuery("sp_portal", $sp.getPortalRecord().getUniqueValue());
+	m2mSearchSourceGR.query();
+	while(m2mSearchSourceGR.next()) {
+		var searchSourceGR = m2mSearchSourceGR.getElement("sp_search_source").getRefRecord();
+		data.resultTemplates["sp-search-source-" + searchSourceGR.getValue("id") + ".html"] = $sp.translateTemplate(searchSourceGR.getValue("search_page_template"));
+		getResults(searchSourceGR);
+		var SearchSourceId = searchSourceGR.getValue("id");
+		data.searchSources.push(SearchSourceId);
+		data.searchSourceConfiguration[SearchSourceId] = searchSourceGR.getValue("sys_id");
+	}
+}
+
+function getResults(gr) {
+	//Check if the user is allowed to see this source.
+	if ($sp.isUserCriteriaEnabled()) {
+		if (!$sp.userCanSeeSearchSourceByCriteria(gr.getUniqueValue()))
+			return;
+	} else {
+		var gs = GlideSession.get();
+		var searchSourceRoles = gr.getValue("roles");
+		if (searchSourceRoles &amp;&amp; !gs.hasRole(searchSourceRoles))
+			return;
+	}
+
+	if (gr.is_scripted_source) {
+		var input = {};
+		input.query = data.q;
+		input.facets = {};
+		input.indexGroup = 'portal_index_group';
+		var evaluator = new GlideScopedEvaluator();
+		var results = evaluator.evaluateScript(gr, "data_fetch_script", input);
+		if(results) {
+			results.forEach(function(item) {
+				item.templateID = "sp-search-source-" + gr.getValue("id") + ".html";
+				data.results.push(item);
+			});
+		}
+	} else {
+		var primaryField = gr.getValue("primary_display_field");
+		var displayFields = gr.getValue("display_fields");
+
+		var resultGR = new GlideRecordSecure(gr.getValue("source_table"));
+		var condition = gr.getValue("condition");
+		if (condition)
+			resultGR.addEncodedQuery(condition);
+		if (data.q)
+			resultGR.addQuery('123TEXTQUERY321', data.q);
+		resultGR.query();
+
+		var searchTableCount = 0;
+		while (resultGR.next() &amp;&amp; searchTableCount &lt; data.limit) {
+			if (!resultGR.canRead())
+				continue;
+
+			var secondaryValues = [];
+
+			if (displayFields)
+				displayFields.split(",").forEach(function(field) {
+					var obj = getField(resultGR, field);
+					secondaryValues.push(obj);
+				});
+
+			data.results.push({
+				primary: (primaryField) ? resultGR.getValue(primaryField) : resultGR.getDisplayValue(),
+				sys_id: resultGR.getUniqueValue(),
+				table: resultGR.getTableName(),
+				templateID: "sp-search-source-" + gr.getValue("id") + ".html",
+				fields: secondaryValues,
+				type: gr.getValue("id")
+			});
+			searchTableCount++;
+		}
+	}
+
+	if (data.results.length == 0 &amp;&amp; options.show_did_you_mean) {
+		var didYouMean = new GlideTSDidYouMean();
+		var suggestions = [];
+		data.suggestions = [];
+		if (data.t == 'kb')
+			suggestions = didYouMean.getAlternatePhrases(data.q, 'kb_knowledge');
+		else if (data.t == 'sc')
+			suggestions = didYouMean.getAlternatePhrases(data.q, 'sc_cat_item');
+		else
+			suggestions = didYouMean.getAlternatePhrases(data.q, gr.getValue("source_table"));
+
+		for(var i=0; i&lt;suggestions.size(); i++) {
+			 if(data.suggestions.indexOf(suggestions.get(i) + '') == -1)
+					data.suggestions.push(suggestions.get(i) + '');
+		}
+	}
+}
+
+function getField(gr, name) {
+	var f = {};
+	f.display_value = gr.getDisplayValue(name);
+	f.value = gr.getValue(name);
+	var ge = gr.getElement(name);
+	if (ge == null)
+		return f;
+
+	f.type = ge.getED().getInternalType()
+	f.label = ge.getLabel();
+	return f;
+}
+]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;X228263&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-01-21 13:13:39&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;2d2d8a5a1bf9e050cd3820a36b4bcb24&lt;/sys_id&gt;&lt;sys_mod_count&gt;243&lt;/sys_mod_count&gt;&lt;sys_name&gt;search page translation&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_2d2d8a5a1bf9e050cd3820a36b4bcb24&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;X228264&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-01-27 20:06:54&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="dropdown"&gt;
+  &lt;select class= "dropbtn" ng-model="c.data.text_input" ng-change="c.submit()"  &gt;
+    &lt;option hidden disabled selected value &gt; Select second search language -- default: English &lt;/option&gt;
+    &lt;option ng-repeat= "lang in data.langvalues" value="{{lang}}" &gt;{{lang}}&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+
+//standard version
+
+&lt;div&gt;
+  &lt;div class="panel panel-default"&gt;
+    &lt;div ng-if="data.results.length==0"&gt;
+      &lt;div class="panel-heading"&gt;&lt;h2 class="h4 panel-title"&gt;${No results}&lt;/h2&gt;&lt;/div&gt;
+      &lt;div class="panel-body wrapper break-word"&gt;
+        &lt;p&gt;${Your search - &lt;b&gt;{{data.q}}&lt;/b&gt; - did not match any documents}&lt;/p&gt;
+        &lt;div ng-if="options.show_did_you_mean &amp;&amp; data.suggestions.length &gt; 0"&gt;
+          ${Did you mean}:
+          &lt;ul&gt;
+            &lt;li ng-repeat="term in ::data.suggestions track by $index"&gt;
+              &lt;a href="javascript:void(0)" ng-click="search(term)"&gt;{{::term}}&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;p ng-if="options.show_did_you_mean &amp;&amp; data.suggestions.length &gt; 0"&gt;${Other suggestions}:&lt;/p&gt;
+        &lt;p ng-if="!options.show_did_you_mean || data.suggestions.length == 0"&gt;${Suggestions}:&lt;/p&gt;
+        &lt;ul&gt;
+          &lt;li&gt;${Make sure all words are spelled correctly}&lt;/li&gt;
+          &lt;li&gt;${Try different, more general, or fewer keywords}&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div ng-if="data.results.length&gt;0" class="panel-heading break-word"&gt;
+      &lt;h2 class="h4 panel-title"&gt;${Search results for '{{data.q}}'}&lt;/h2&gt;
+    &lt;/div&gt;
+
+    &lt;div role="list" &gt;
+      &lt;div role="listitem" ng-repeat="item in data.results | orderBy:'-score' | limitTo:data.limit" class="panel-body b-b result-item"&gt;
+        &lt;div ng-include="item.templateID" data-index="{{$index}}"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>2062954073</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>c3d498b61bd6a45017cf0edacd4bcb9b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1774574bdbd0000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name>search page translation</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>5d45a6d0cf0260d05f4492256a0da2f1</update_guid>
+<update_guid_history>5d45a6d0cf0260d05f4492256a0da2f1:2062954073,6535a2144ece20d04a2595ff0055deca:1424508362,b1951adcf90e20d0387aa9fbe02c8355:-1146740181,29855210154e20d027a91c5d537070fa:-1993620359,cb55921cf80e20d0839b52ed40872a19:959554042,7bd4169c700e20d027cf407114d22053:1827370342,4e84d298640e20d050095bb45fbcc17c:-208275776,a0649618da0e20d0a535ed73c8017c64:-825165959,d0041a54de0e20d0b78f6179e66ab787:-208275776,bce39618540e20d05147130ca579e094:-1955345304,40c35e18fe0e20d0e5d62ec0aaa57bc4:62061835,1ea3d218f90e20d041ab78f45215d8e7:-1380263889,c5639294330e20d0922976d0253e1eea:-6303283,13439a90640e20d04d55bdbb78f4f317:262360612,5233561ca0ca20d026375a199dad9d46:2018860052,60b25a90ab0e20d0dd65617a16aa02e1:-1380263889,08a29e982cca20d0beb5ae3e29ce4efd:20901407,116296dc16ca20d01cfa5a1c149f2cfb:-2075176459,6442d61c5dca20d0be9e904c77270686:1584549109,e2919a58e2ca20d0c03db1b25bc7c0c8:-1380263889,32811658ceca20d09d878814c3437d55:-208275776,69501a18018a20d07c1de569dd7caa43:1252019249,114f8694148a20d0ec3735295f943df3:2145338143,206ec618048a20d0e58b850d11e75bfb:2030601672,bddd4e18b58a20d06ab6f8fef669ecfd:1795551244,084d4ed4548a20d0f41f3324310cb96b:-152987229,aebccad4c08a20d03ceb195eba7444f1:2086255773,408cca90b38a20d0b2dbb934d8968925:-1039798751,d02c429cbf4a20d0b3db3c2b9aab8bb9:-1646835397,3e0c8ed0188a20d090cb4b834f544d41:963087989,a57bc6dc4f4a20d0e7e680c720c2a3ec:-1908508979,645b825c644a20d088ed6e00f87c5342:1371331207,c5fa461c2c4a20d02b72b318ba79657b:-788084320,13da06d09d4a20d08fdfd049943a44f6:1921216634,621a4e58784a20d00d6fa17f1495bc3d:-240629917,9ea90218094a20d0af2f5004a931f8d0:2020470500,d7b84614e34a20d04ecfaa0fcf3c753f:-582443367,a1b075d8680620d01dba4ef9fc73e15a:345726733,a2a071d8fa0620d0b96995582ebeb929:2018337773,c580f598f20620d03d1ad4d88c569dd7:1900808097,78bc655c4bc220d0ad1a2c68af84deb4:345726733,213b211064c220d0911b16f991f40cda:207858824,1115e1140a8220d0913171fba764dd49:-1687226597,660569d0188220d023287dea1e487cf1:493748993,71f4e9d0cf8220d06b996bf1aa5f2483:157028499,d2e469d00d8220d0b6c1373836443dd4:-1704201533,cc74e550d88220d0e75955728daabf30:-1687226597,0544651c034220d0f04091531221f84b:-360055778,4f632598874220d0814698fe24234766:-1687226597,7f2329946b4220d01158bf99e7eb12b3:981192435,a3b2e550194220d02743806cf43fd812:-1115862437,ba822954574220d02c536b58311df9d8:1256363585,4d62a5d4454220d05763aa5304f3b285:398634884,4a3265d4ab4220d0a0e0a1acbbddff40:981192435,33f1e594f44220d0e4573ec7b3ea5aca:-676789152,4cd1e1d0944220d03edf321a11d97de9:-48459767,4a71ed90864220d0fc7e3b09794c7cd9:-1306139878,5461ed90d04220d049ec8381daf6cdc7:1469687770,42a0e5d8df0220d0a9fc9c8923e88052:981192435,3890e9d8870220d0f5c10ae9e6385988:1698029797,1630e9d8020220d080ca1bfcf9cdd96e:1359481234,d1202dd8430220d07fd4d91de320085a:434414137,a9ef5914eb0220d0e2d30e1515264a21:1359481234,57df99d8190220d066be7313edfbff4d:-2080795946,20afd5d8b40220d0b4d48db4aeb3b249:1359481234,5f8f91d86a0220d061ac0a1c75362dd3:1572716490,336fd1d8ff0220d0da3fce2ff4b3e7e3:1359481234,e46f95503a0220d0a865cd7caee9fc80:2056572970,304f59983b0220d013efe819410183f1:1359481234,ed1f1998910220d0f9944a3ddda0c6b4:-234250631,10de1118090220d036a275386ab77139:-907353632,38aedd9c80ceec90e31d5aa61b71123f:504168860,1f0edd54300220d05a6ae88d61339cc8:213380230,32fd5dd0330220d0a86e367280eb77bd:-1134710113,22ad5d14e30220d0308e1151df024af2:213380230,229d1914d90220d03ffb3ac2bf4b1507:-904859988,336d551ce8ceec9061bdbd657bd646b6:1118253976,1e8c1d5c76ceec909336839fdc54b29e:1087027085,935c195ca5ceec90c16eda451d47b86f:-1855407475,51fb5dd80dceec90072d6461261fe979:-2077658330,df8b999484ceec90d8227631a401c03a:-1586593769,7fea1d1c998eec900eabec89f5a89f46:1831462715,1f37d95cabce289008f676f291bf47a4:-2030317918,6f7695d86dce289030fb78784a6456c1:-1498737149,22f55dd495ce28903d772a2f2c179cbf:84604886,c365a814d846ec902be9478525a6cb42:300417999,343424105046ec9056e2b4ab3f17d2dd:-1216677707,6f01e8505106ec90cd36c8d46b30a919:-673694661,a8d0e0d09206ec90df6441b373c2aef2:-1177188293,0fb0a8dc55c2ec907e30065d7e121d40:1762460671,1d8068507406ec90f3103828c2ced75e:671981011,aa60ec103f06ec9083dedd97645d1cf0:-1487485735,2640a410f806ec90daa19feb27ab7c46:-617770941,aaff1cd801c2ec90e59265fe884f8575:1792038753,bbe1cf2b3af560908d3669fb95d2298d:-1177188293,ba5187ab61f560901c4a62f82012bcc0:963670958,4e01cf2be1f56090d9651371097d0324:-1183265714,c62043a7baf560901221d3e35d5e94da:-144006864,eccf32638cb128908970bde0431f28ec:633195841,85bff66f6b712890a485161577dbcf0f:1144486208,30affa2337b12890d8d19b640156e2ce:293109000,814ebea31cb560904db4a8342d6fab59:1540087042,1ba7bea3b8312890487859f394e1587c:633195841,c297b2ef20fde490725d44af3fddda7e:1550042463,fdd63e634cb5609014180a31af60e356:1968313841,c1d6fa6794fde490901ec5c358ebf9d6:1144486208,25005a83997160900e094cc7b2838078:633195841,e2dec2cf79316090f85d4a06242192ec:32153861,fbae868fc83160902b0e1cf6978cdc2f:-1779329244,c19e06cb193160908aa4e2ac23240191:1954488307,c86ec60f4b3160909851b9df1e028218:-2035659297,473e0acbb0316090c522c8a458f16537:1320415832,cb2ec2cb9d316090a0f64226de23f6f3:582456131,c31e42cb6231609054149419ad863869:-1688270482,272b8acf19fd209026daeed4d346838d:749023892,64facec770fd20901d6c31c5f891041c:868767636,2dc9824b8bfd20902e855703f96ae9a3:-610427019,5f994683c9fd20906b1c35ec46138f1b:-1577936810,3e790e47effd20905894f4a0e8c0b5c6:1998861367,28598e4341fd20901ee0121e012794fa:-1516110545,f03902475cfd2090ac55b072a3218bc1:2025720962,e9b84a03aefd2090dbd4062ea5bb5065:-1977454470,29988ecf1abd2090df75ae69fd3192db:-1895348264,4b7886cfefbd2090eb887fd5269edadf:1340188431,6178ce4f39bd2090f359a57d24c649ba:1944309536,1b084e4fc6bd2090c3c739b816169990:-1341578037,92b70a0f30bd2090d557f0b6b186e43c:1035538578,dba7868b78bd2090b825c6a5ece7666f:-879481572,22cb710ba63d209053df471e04a3edf1:1914137858,9d5b3587c33d2090eb62a6962c6eec5a:908193032,9d4b3543abf9209027f0ea84d7c8f7fe:1798787796,011b7dcbe5f920900c09ee9ae1743a9b:908193032,7ecab107c33d2090485bb1601fe8653f:519467283,9c487dcb23f920901f5c3cb6b7b88c3b:-737212726,a010354712b920905de9a54f09feca9c:418118972,f2cfad0740b92090af7cbf53fc467722:-1369392380,75af29074fb920907e9382317cd53f90:418118972,7a8f2dc3ccb9209015018b16ef4c3456:1025100935,594fa1478b79209094bc4b996bef1f1c:74033239,fecbe5476279209066d0c3504d011ea1:1793299383,5dbb6d03587920905b1bed04e9342d4e:-161905377,bc8be107f97920909e4f8b4db78fb047:1307059764,e56ba107c179209055d35e9f197684dc:710212300,841ba18331792090d04e33867d107fb8:39911953,29fae903627920909780ec39456c04f4:1450226945,ecbae90398792090099f83b090e28fd0:-1522338151,5659ad0ba1392090a3d74538c4aca4ad:735447470,a2e825c74a392090289b4aadce98d41f:-982753898,aeb8e5c70b392090bf3c146b44ef8243:-1822818882,9ba8e1c7bc3920904151be4da7b2faf5:2081279048,c4a8ed87693920907ce9b21a20b74594:-1135370048,7c98e98716392090669cf419a3a73973:1931576312,1778e10b6bf52090f61737572407733e:-315943222,1b6861c3f1f520902ff6ed4bb661f8d1:-1733620376,bbe72dc7e3f52090d699986d39e6cb35:1243088858,81e76d4327f520900f03497f62a44a52:-1113104549,92a7e5c35839209010fa7b9738802168:442989830,4434a54771f5209041fdacfb96ba33ad:956522864,cd24ad47fef52090e55b17ee325ea9a0:655500920,3214a98357f52090efb54a61b58845c7:-982357625,8004a5c338f52090a9293bf351da1522:2030083136,e943a98360f52090eb7a07b02e8c1bb4:-273326172,5f13ad03ccf52090655fb28ba7fc4a49:-1789154486,77d221034bf52090c80661be8569494f:1097332011,3dd2a18f8db52090f7592992dfea0cb8:414879671,50b2edcf99b520901eb09fc5a80e9b84:-1789154486,1f62edc7c4b52090f1903273f7d41969:-273326172,f452694f12b520901dfa2a48442bafcc:1423804088,2190a5c72bb52090b6013c69b0635492:601323955,216065c78fb52090d0e33ed270032071:-1711987544,3c606107f9b520903d8b597ed8ab2ece:-1780889812,f950e1c770b5209079b2dade974b0eec:1803275892,9d9841071eb120909b3a631f168bab49:-928759521,5b7881433fb12090946910a0ba09e578:-1284478789,2b68090391b1209028194fd9594a6979:736032552,ab37c50332b12090acb49c7697c7b695:-583417718,6e270dcf507120900aa96d3bf94496cd:-87037551,8fc60587307120902b6a618e0f5c42d6:-203176310,73b6c1cf42712090649e252e04fed9b4:1394596959,8db681cf2371209009b047aeac618b63:1530837709,62a641cf757120902baa376aa226366c:-865698910,f79541c7b6712090e9f54aa2e9ba6e91:1740949445,f94441874771209076e3049099d091b7:2003391997,8f2489432871209078ac3970eaf2f06d:-1992794360,d604490715712090cd41c2a36f5a2506:601323955,11e34507b3712090a12225f0aa5b8449:1815341587,5e138943037120901e8870f269c78062:-916693826,51e24d03e9712090b92ab60f97ac5721:1815341587,4fd1050f97312090cb9872e6242bbce4:-1626321848,7ce009cb4031209034c68978699c96bd:-1025510597,56a0498b60312090589e7724552dce95:-535956435,90a0c58b76312090b7f04618e4f6a675:-1293358131,fa70054b2b3120904be9e64a92a65bb8:1697814058,f030cd4f1ffdec50b45b49b114155d59:-1025510597,efcff04ba231209027f6e4551c84768e:101139596,926f34cfdefdec503b587268ec372586:-382042334,965ff04b8831209041b253d47210416b:259676978,c2fcb8430231209051f483b11dbad129:-1580430632,74ccf04359312090be9eb5b74aeb10ff:322913149,4abc704372312090e7ff60fe4acf9846:-1174228888,56bbb4435efdec506aa4b0a2ad59bd52:-2097108992,0a8bf0cfecfdec50a521ee7ab360f663:779989183,28b974cb82fdec50532aead9b9f859b3:391124233,d199b4cb0bfdec50ec2e8684d7b96043:1837206922,b9f73807adfdec509f5a4fc0da5a2ec7:-1411188722,0f27b8cfa8bdec503aa945dfd79ead08:890666185,1fe37c4b53bdec50f64d2bb543eef7cf:-2109000762,67d3f08b59bdec50db290645f9c888e9:-998402937,bcc37c4beabdec507e362528b81db5be:1479132596,f54d2c8b8df9ec506fdddc1b7da7d989:1906048518,d32da4c36eb9ec502ecdfb2372008df7:10526510,be0c6c4b593dec50282d547226d2634b:-1785522942,3b917f7e09fdac50814ebf57958721e6:-204252602,e0d033babafdac5035bb0221fbdf7ac0:553353888,b3b03b7ae2fdac50d69a6946eefd9dc0:-1557604764,9fa03b7a41fdac50b65850082a1dfb78:-2011847199,3d80fb3ab8fdac50affb7a0de0253a51:-204252602,e5203f7608fdac5088b00d9f077c10c0:1560846781,106eeffec5bdac50f978607625b7a8dc:1850791811,323e2bbe07bdac50d4132da28983c4dd:-273438701,da1ea77e2cbdac50a2e338ec91096dfa:508778563,664de77e33bdac500eb4b71b464a1572:1182426806,2c3d6f7aafbdac509263525d3cec2969:-202030876,552c2f36a8bdac50dbe65649522d4177:-698505458,bebb6f3600bdac50f812483e9389a54e:-1987172950,196b593afeb16c50a3a09aac1a082f40:-204252602,134b95f6a7b16c50738e2b6e0bbbef6b:-1051408696,42df5e12acfde05065c3a7124190fa93:-204252602,022fd65637fde050070f0655dbb4bff2:1778685521,70be1ad257fde050427718b5ac8110fe:1344054825,4e5e56927cfde0507c9a45a99d2f9252:1586961102,c83e1ede2cbde0500257074ca0b60f7a:-1497724018,246ddade31bde05090a9ba2e02ac2887:-1321276165,60dc5a9a68bde050bb3cbd9ced9c0d5d:-1718086190,6bac92da03bde05020b7ebb2427b0c6d:1218695914,e1e95a1288bde0509236648721994514:180811173,e998deda0f7de05072ee0b345793d22c:-657959842,3058d25e687de050111426687423a6e5:128670575,76a75a9aea7de050bde889d214a7120a:-1279135020,d3c69a964f7de05000128fa37cb9f1ad:128670575,05869256137de05065d7980e6f87e73c:354773116,b35e065edff9e05061a52c7cb174d649:-1236634354,4d8d829addf9e050e992a036afbcba36:-274765236,612dce5a4af9e050ff709b9e46925d35:-474383462</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_6dfd0ada1bf9e050cd3820a36b4bcbe1</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="DELETE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>2</order><roles/><short_description/><size>md</size><sp_column display_value="2">5acbcb70d7000200a9ad1e173e24d4f1</sp_column><sp_widget display_value="search page translation">2d2d8a5a1bf9e050cd3820a36b4bcb24</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>X228263</sys_created_by><sys_created_on>2021-01-21 13:17:13</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>6dfd0ada1bf9e050cd3820a36b4bcbe1</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_6dfd0ada1bf9e050cd3820a36b4bcbe1</sys_update_name><sys_updated_by>X228263</sys_updated_by><sys_updated_on>2021-01-21 13:17:13</sys_updated_on><title/><u_image/><u_template/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=6dfd0ada1bf9e050cd3820a36b4bcbe1"/></record_update>]]></payload>
+<payload_hash>1676516304</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>c7d498b61bd6a45017cf0edacd4bcb97</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>177442c03a40000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>bd13911039ce2890efd7f8bf88b8abfc</update_guid>
+<update_guid_history>bd13911039ce2890efd7f8bf88b8abfc:1676516304,a9fd0ada4cf9e0509332bf7aa5f0c2e3:121063388</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_row_cacbcb70d7000200a9ad1e173e24d4c5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><sp_column/><sp_container display_value="Search Results - Container 2">29cbcb70d7000200a9ad1e173e24d4b9</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2015-05-13 16:15:00</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>cacbcb70d7000200a9ad1e173e24d4c5</sys_id><sys_mod_count>2</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Service Portal - Core" source="com.glide.service-portal">f637072bdbb20300786b766eaf9619cf</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_row_cacbcb70d7000200a9ad1e173e24d4c5</sys_update_name><sys_updated_by>X228264</sys_updated_by><sys_updated_on>2021-01-22 18:51:29</sys_updated_on></sp_row></record_update>]]></payload>
+<payload_hash>-1922185239</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>c7d498b61bd6a45017cf0edacd4bcb9a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1772b6fe6f40000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Row</type>
+<update_domain>global</update_domain>
+<update_guid>c814a072ac392c502a90b54955b09e11</update_guid>
+<update_guid_history>c814a072ac392c502a90b54955b09e11:-1922185239,eef3a03228392c50f9ad7daec3d7314b:-204002137,6af3a032e8392c5087e7fffdb9bd7b4a:-1922185239</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_a6f3a032db392c50e2c70ad9f4961947</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="DELETE"><class_name/><order>1</order><size>6</size><size_lg/><size_sm/><size_xs/><sp_row display_value="">a2f3a83edbb52c50e2c70ad9f49619ed</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>X228264</sys_created_by><sys_created_on>2021-01-22 18:51:07</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>a6f3a032db392c50e2c70ad9f4961947</sys_id><sys_mod_count>1</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_a6f3a032db392c50e2c70ad9f4961947</sys_update_name><sys_updated_by>X228264</sys_updated_by><sys_updated_on>2021-01-22 18:51:24</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>-524841768</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>cbd498b61bd6a45017cf0edacd4bcb96</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1772b6fe6990000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid>bb04607215392c5034f02570033a11fd</update_guid>
+<update_guid_history>bb04607215392c5034f02570033a11fd:-524841768,be04e832c5392c50a1577aad32c637f4:-309494393,2af3a03269392c50a3a7765af8ac9748:-490389367</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_rel_widget_clone_40f1d51c1b8e289017cf0edacd4bcb06</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone"><sp_rel_widget_clone action="INSERT_OR_UPDATE"><child display_value="search page translation 2">00f151141b8e289017cf0edacd4bcb0f</child><cloned>2021-01-21 13:13:39</cloned><last_validated>2021-01-21 13:13:39</last_validated><parent display_value="Search Page">b8c57073cb10020000f8d856634c9cfc</parent><payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;standard&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function ($scope, $window, $location, spUtil, $rootScope) {
+	spUtil.setSearchPage($scope.data.t);
+	$scope.showScore = $scope.options.show_score == 'true' || $scope.options.show_score == true;
+	$scope.latitude = null;
+	$scope.longitude = null;
+	$scope.isLocationTrackerDisabled = $scope.data.isLocationTrackerDisabled === "true";
+
+	$scope.getBGImage = function(item) {
+		return {"background-image": "url('" + item.picture + "')"};
+	}
+
+	$scope.search = function(searchTerm) {
+		$location.search('q', searchTerm);
+	}
+
+	$scope.highlight = function(haystack, needle) {
+		if (!haystack)
+			return "";
+
+		if (!needle)
+			return haystack;
+
+		return haystack.replace(new RegExp(needle.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1"), "gi"), function(match) {
+			return '&lt;span class="highlight mark"&gt;' + match + '&lt;/span&gt;';
+		});
+	}
+
+	$scope.escapeHTML = function(value) {
+		var entityMap = {
+					"&amp;": "&amp;amp;",
+					"&lt;": "&amp;lt;",
+					"&gt;": "&amp;gt;",
+					'"': '&amp;quot;',
+					"'": '&amp;#39;',
+					"/": '&amp;#x2F;'
+				};
+		if (!value) return value;
+		value = String(value).replace(/[&amp;&lt;&gt;"'\/]/g, function (s) {
+        		return entityMap[s];
+        	});
+
+		return value;
+	}
+
+	function setUserLocationCoords(cb) {
+		var onSuccess = function(pos) {
+			return cb({
+				latitude: pos.coords.latitude,
+				longitude: pos.coords.longitude
+			})
+		};
+
+		var onError = function() {
+			return cb({
+				latitude: null,
+				longitude: null	
+			});
+		};
+
+		return window.navigator.geolocation.getCurrentPosition(onSuccess, onError, {
+			enableHighAccuracy: true
+		});
+	}
+
+	if(!$scope.isLocationTrackerDisabled){
+		setUserLocationCoords(function(coords) {
+			$scope.latitude = coords.latitude;
+			$scope.longitude = coords.longitude;
+			
+			// Track Search Event with Location coordinates
+			trackSearchEvent();
+
+		});
+	} else {
+		//Track Search Event without location coordinates
+		trackSearchEvent();
+	}
+	
+	function trackSearchEvent() {
+		var c = $scope;
+
+		var payload =  {
+			query: _.get(c, 'data.q'),
+			portal_id: _.get(c, 'portal.sys_id'),
+			page_id: _.get($window, 'spSearchAnalytics.page_id', c.page.id),
+			refinement_occurred: false, // refinement cannot occur in this widget since no facets are available
+			browser_info: $window.navigator.userAgent,
+			location: {
+				latitude: $scope.latitude,
+				longitude: $scope.longitude
+			},
+			search_results: getSearchResultsSignals($scope),
+			results_per_source: getSearchSources($scope)
+		}
+
+		var payloadObject = {
+			action: "GlideSPSearchAnalytics",
+			payload: payload
+		};
+		c.server.get(payloadObject);
+	}
+
+	function getSearchSources($scope) {
+		var c = $scope;
+		var sources = {};
+		if (c.data.t) {
+			sources[c.data.t] = 0;
+		}
+		else {
+			c.data.searchSources.map(function(key) {
+				sources[key] = 0;
+			});
+		}
+		$scope.data.results.map(function(item) {
+			var sourceId = _.get(item, 'type');
+			if (sources[sourceId])
+				sources[sourceId]++;
+			else
+				sources[sourceId] = 1;
+		});
+		var searchSources = [];
+		Object.keys(sources).map(function(key) {
+			var source_id = c.data.searchSourceConfiguration[key];
+			searchSources.push({
+				source_id: source_id,
+				number_of_results: sources[key]
+			});
+		});
+		return searchSources;
+	}
+
+	function getSearchResultsSignals($scope) {
+		return $scope.data.results.map(function(item) {
+			var recordId = item.sys_id;
+			var tableName = item.table;
+			
+			return {
+				record_id: recordId,
+				table_name: tableName
+			};
+		});
+	}
+
+	function pageChanged(newUrl, oldUrl) {
+		var newUrlParams = newUrl.match(/id=.+/),
+		oldUrlParams = oldUrl.match(/id=.+/);
+
+		if(!newUrlParams &amp;&amp; !oldUrlParams) {
+			return false;
+		}
+
+		if((!newUrlParams &amp;&amp; oldUrlParams) || (newUrlParams &amp;&amp; !oldUrlParams)) {
+			return true;
+		}
+
+		return newUrlParams[0].split("&amp;")[0] !== oldUrlParams[0].split("&amp;")[0];
+	}
+
+	function getResultDescription(result){
+		var description = null;
+		if(result.name != null)
+			description = result.name;
+		else if(result.primary != null)
+			description = result. primary;
+		else if(result.sec_title != null)
+			description = result.sec_title;
+		return description;
+	}
+
+	function trackSearchResultClicked(resultClicked, rank) {
+		if (!rank || rank &lt; 1) return ;
+		var c = $scope;
+		var query = _.get(c.data, 'q');
+		var results = _.get(c.data, 'results', []);
+		
+		var result = results.find(function(e) {
+			  return e.primary.trim() === resultClicked.trim();
+		});
+	
+		var sourceTable = result.table != null ? result.table : null;
+
+		var payloadObject = {
+			action: "GlideSPSearchAnalytics",
+			payload: {
+				query: query,
+				portal_id: c.portal.sys_id,
+				page_id: $scope.page &amp;&amp; $scope.page.id,
+				results_per_source: getSearchSources(c),
+				refinement_occurred: false,
+				browser_info: $window.navigator.userAgent,
+				location: {
+					latitude: $scope.latitude,
+					longitude: $scope.longitude
+				},
+				result_event_sys_id : result.sys_id,
+				label_description : getResultDescription(result),
+				source_table: sourceTable,
+				signal_type: "CLICK",
+				signal_value: rank
+			}
+		};
+
+		$window.spSearchAnalytics = {
+			query: query
+		};
+
+		c.server.get(payloadObject);
+	}
+	
+	// Event delegation for Updating click rank
+	$(".panel").on('click', '.result-item a', function(e) {
+		var index = $(e.currentTarget).parent().parent().data('index');
+		var resultClicked = e.currentTarget.innerText;
+		trackSearchResultClicked(resultClicked, index+1);
+	});
+	
+}]]&gt;&lt;/client_script&gt;&lt;controller_as/&gt;&lt;css&gt;a.question-tag {
+    color: #39739d;
+    background-color: #e1ecf4;
+    border: 1px solid #e1ecf4;
+    display: inline-block;
+    margin: 4px 4px 4px 0;
+    border-radius: 0;
+    text-align: center;
+    line-height: 1;
+    padding: .4em .5em;
+}
+
+.sc {
+  i.ta-icon, i.ta-img {
+    width: 30px;
+    height: 30px;
+    line-height: 20px;
+    background-size: contain;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    float:left;
+    padding-right: 8px;
+  }
+}
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function(scope) {
+	var lazyLoader = $injector.get("lazyLoader");
+	lazyLoader.putTemplates(scope.data.resultTemplates);
+}]]&gt;&lt;/link&gt;&lt;name&gt;Search Page&lt;/name&gt;&lt;option_schema&gt;[{"hint":"Show search result relative ranking","name":"show_score","section":"other","label":"Show score","type":"boolean"},{"hint":"Maximum number of search results when not specifying a search group (default 30)","name":"max_all","section":"Behavior","label":"Max results for All search","type":"integer"},{"hint":"Maximum number of search results when specifying a search group (default 15)","name":"max_group","section":"Behavior","label":"Max results for single search source","type":"integer"},{"name":"show_did_you_mean","default_value":"false","section":"Behavior","label":"Show Did You Mean","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[if (input &amp;&amp; input.action === "GlideSPSearchAnalytics") {
+	input.action = "";
+	var textSearchAnalytics = new GlideSPSearchAnalytics().publish(JSON.stringify(input.payload));
+	return ;
+}
+
+// populate the 'data' variable
+data.showPrices = $sp.showCatalogPrices();
+data.q = $sp.getParameter('q');
+data.t = $sp.getParameter('t');
+data.results = [];
+data.searchSources = [];
+data.searchSourceConfiguration = {};
+//Provide searchType, portal and page information for Service Portal search analytics
+data.searchType = "search";
+data.isLocationTrackerDisabled = gs.getProperty('glide.service_portal.disable_location_tracker');
+var pageId = $sp.getParameter('id');
+var pageGr = null;
+if (pageId)
+	pageGr = new GlideRecord('sp_page');
+if (pageGr &amp;&amp; pageGr.get('id', pageId))
+	data.page = pageGr.getUniqueValue();
+var portalRecord = $sp.getPortalRecord();
+data.portal = portalRecord &amp;&amp; portalRecord.getUniqueValue();
+
+options.show_did_you_mean = (options.show_did_you_mean == true || options.show_did_you_mean == "true");
+
+if (data.t)
+	data.limit = options.max_group || 15;
+else
+	data.limit = options.max_all || 30;
+
+//Gotta decide if we want to use the portal's sources, or use the defaults declared by
+//the sys property
+var useDefaultPortals;
+if (!$sp.getPortalRecord()) {
+	useDefaultPortals = true;
+} else {
+	var searchSourcesForPortalGR = new GlideRecord("m2m_sp_portal_search_source");
+	searchSourcesForPortalGR.addQuery("sp_portal", $sp.getPortalRecord().getUniqueValue());
+	searchSourcesForPortalGR.query();
+	useDefaultPortals = searchSourcesForPortalGR.getRowCount() == 0;
+}
+
+data.resultTemplates = {};
+
+if (useDefaultPortals) {
+	var defaultSearchSourceGR = new GlideRecord("sp_search_source");
+	var defaultSearchSourceIDList = gs.getProperty("glide.service_portal.default_search_sources", "");
+	defaultSearchSourceGR.addQuery("sys_id", "IN", defaultSearchSourceIDList);
+	if (data.t)
+		defaultSearchSourceGR.addQuery("id", data.t);
+	defaultSearchSourceGR.query();
+	while(defaultSearchSourceGR.next()) {
+		data.resultTemplates["sp-search-source-" + defaultSearchSourceGR.getValue("id") + ".html"] = $sp.translateTemplate(defaultSearchSourceGR.getValue("search_page_template"));
+		getResults(defaultSearchSourceGR);
+		var SearchSourceId = defaultSearchSourceGR.getValue("id");
+		data.searchSources.push(SearchSourceId);
+		data.searchSourceConfiguration[SearchSourceId] = defaultSearchSourceGR.getValue("sys_id");
+	}
+} else {
+	var m2mSearchSourceGR = new GlideRecord("m2m_sp_portal_search_source");
+	if (data.t)
+		m2mSearchSourceGR.addQuery("sp_search_source.id", data.t);
+	m2mSearchSourceGR.addQuery("sp_portal", $sp.getPortalRecord().getUniqueValue());
+	m2mSearchSourceGR.query();
+	while(m2mSearchSourceGR.next()) {
+		var searchSourceGR = m2mSearchSourceGR.getElement("sp_search_source").getRefRecord();
+		data.resultTemplates["sp-search-source-" + searchSourceGR.getValue("id") + ".html"] = $sp.translateTemplate(searchSourceGR.getValue("search_page_template"));
+		getResults(searchSourceGR);
+		var SearchSourceId = searchSourceGR.getValue("id");
+		data.searchSources.push(SearchSourceId);
+		data.searchSourceConfiguration[SearchSourceId] = searchSourceGR.getValue("sys_id");
+	}
+}
+
+function getResults(gr) {
+	//Check if the user is allowed to see this source.
+	if ($sp.isUserCriteriaEnabled()) {
+		if (!$sp.userCanSeeSearchSourceByCriteria(gr.getUniqueValue()))
+			return;
+	} else {
+		var gs = GlideSession.get();
+		var searchSourceRoles = gr.getValue("roles");
+		if (searchSourceRoles &amp;&amp; !gs.hasRole(searchSourceRoles))
+			return;
+	}
+
+	if (gr.is_scripted_source) {
+		var input = {};
+		input.query = data.q;
+		input.facets = {};
+		input.indexGroup = 'portal_index_group';
+		var evaluator = new GlideScopedEvaluator();
+		var results = evaluator.evaluateScript(gr, "data_fetch_script", input);
+		if(results) {
+			results.forEach(function(item) {
+				item.templateID = "sp-search-source-" + gr.getValue("id") + ".html";
+				data.results.push(item);
+			});
+		}
+	} else {
+		var primaryField = gr.getValue("primary_display_field");
+		var displayFields = gr.getValue("display_fields");
+
+		var resultGR = new GlideRecordSecure(gr.getValue("source_table"));
+		var condition = gr.getValue("condition");
+		if (condition)
+			resultGR.addEncodedQuery(condition);
+		if (data.q)
+			resultGR.addQuery('123TEXTQUERY321', data.q);
+		resultGR.query();
+
+		var searchTableCount = 0;
+		while (resultGR.next() &amp;&amp; searchTableCount &lt; data.limit) {
+			if (!resultGR.canRead())
+				continue;
+
+			var secondaryValues = [];
+
+			if (displayFields)
+				displayFields.split(",").forEach(function(field) {
+					var obj = getField(resultGR, field);
+					secondaryValues.push(obj);
+				});
+
+			data.results.push({
+				primary: (primaryField) ? resultGR.getValue(primaryField) : resultGR.getDisplayValue(),
+				sys_id: resultGR.getUniqueValue(),
+				table: resultGR.getTableName(),
+				templateID: "sp-search-source-" + gr.getValue("id") + ".html",
+				fields: secondaryValues,
+				type: gr.getValue("id")
+			});
+			searchTableCount++;
+		}
+	}
+
+	if (data.results.length == 0 &amp;&amp; options.show_did_you_mean) {
+		var didYouMean = new GlideTSDidYouMean();
+		var suggestions = [];
+		data.suggestions = [];
+		if (data.t == 'kb')
+			suggestions = didYouMean.getAlternatePhrases(data.q, 'kb_knowledge');
+		else if (data.t == 'sc')
+			suggestions = didYouMean.getAlternatePhrases(data.q, 'sc_cat_item');
+		else
+			suggestions = didYouMean.getAlternatePhrases(data.q, gr.getValue("source_table"));
+
+		for(var i=0; i&lt;suggestions.size(); i++) {
+			 if(data.suggestions.indexOf(suggestions.get(i) + '') == -1)
+					data.suggestions.push(suggestions.get(i) + '');
+		}
+	}
+}
+
+function getField(gr, name) {
+	var f = {};
+	f.display_value = gr.getDisplayValue(name);
+	f.value = gr.getValue(name);
+	var ge = gr.getElement(name);
+	if (ge == null)
+		return f;
+
+	f.type = ge.getED().getInternalType()
+	f.label = ge.getLabel();
+	return f;
+}
+]]&gt;&lt;/script&gt;&lt;servicenow&gt;true&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2015-06-03 23:17:49&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;b8c57073cb10020000f8d856634c9cfc&lt;/sys_id&gt;&lt;sys_mod_count&gt;583&lt;/sys_mod_count&gt;&lt;sys_name&gt;Search Page&lt;/sys_name&gt;&lt;sys_package display_value="Service Portal - Core" source="com.glide.service-portal"&gt;f637072bdbb20300786b766eaf9619cf&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_b8c57073cb10020000f8d856634c9cfc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-04-28 23:15:00&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+  &lt;div class="panel panel-default"&gt;
+    &lt;div ng-if="data.results.length==0"&gt;
+      &lt;div class="panel-heading"&gt;&lt;h2 class="h4 panel-title"&gt;${No results}&lt;/h2&gt;&lt;/div&gt;
+      &lt;div class="panel-body wrapper break-word"&gt;
+        &lt;p&gt;${Your search - &lt;b&gt;{{data.q}}&lt;/b&gt; - did not match any documents}&lt;/p&gt;
+        &lt;div ng-if="options.show_did_you_mean &amp;&amp; data.suggestions.length &gt; 0"&gt;
+          ${Did you mean}:
+          &lt;ul&gt;
+            &lt;li ng-repeat="term in ::data.suggestions track by $index"&gt;
+              &lt;a href="javascript:void(0)" ng-click="search(term)"&gt;{{::term}}&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;p ng-if="options.show_did_you_mean &amp;&amp; data.suggestions.length &gt; 0"&gt;${Other suggestions}:&lt;/p&gt;
+        &lt;p ng-if="!options.show_did_you_mean || data.suggestions.length == 0"&gt;${Suggestions}:&lt;/p&gt;
+        &lt;ul&gt;
+          &lt;li&gt;${Make sure all words are spelled correctly}&lt;/li&gt;
+          &lt;li&gt;${Try different, more general, or fewer keywords}&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div ng-if="data.results.length&gt;0" class="panel-heading break-word"&gt;
+      &lt;h2 class="h4 panel-title"&gt;${Search results for '{{data.q}}'}&lt;/h2&gt;
+    &lt;/div&gt;
+
+    &lt;div role="list" &gt;
+      &lt;div role="listitem" ng-repeat="item in data.results | orderBy:'-score' | limitTo:data.limit" class="panel-body b-b result-item"&gt;
+        &lt;div ng-include="item.templateID" data-index="{{$index}}"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload><sys_class_name>sp_rel_widget_clone</sys_class_name><sys_created_by>X228263</sys_created_by><sys_created_on>2021-01-27 14:02:49</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>40f1d51c1b8e289017cf0edacd4bcb06</sys_id><sys_mod_count>0</sys_mod_count><sys_name>00f151141b8e289017cf0edacd4bcb0f</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_rel_widget_clone_40f1d51c1b8e289017cf0edacd4bcb06</sys_update_name><sys_updated_by>X228263</sys_updated_by><sys_updated_on>2021-01-27 14:02:49</sys_updated_on></sp_rel_widget_clone></record_update>]]></payload>
+<payload_hash>1555176667</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>cbd498b61bd6a45017cf0edacd4bcb99</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>177442768f40000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name>00f151141b8e289017cf0edacd4bcb0f</target_name>
+<type>Widget Clone</type>
+<update_domain>global</update_domain>
+<update_guid>80f1d51c228e2890419e6f0ccbbb8e08</update_guid>
+<update_guid_history>80f1d51c228e2890419e6f0ccbbb8e08:1555176667</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_c2c26f63db392890e2c70ad9f4961966</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="DELETE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>2</order><roles/><short_description/><size>md</size><sp_column display_value="1">45133982cb21020000f8d856634c9ca3</sp_column><sp_widget display_value="Language Nav">24e76036db792c50e2c70ad9f49619b7</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>X228264</sys_created_by><sys_created_on>2021-01-25 16:40:12</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>c2c26f63db392890e2c70ad9f4961966</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_c2c26f63db392890e2c70ad9f4961966</sys_update_name><sys_updated_by>X228264</sys_updated_by><sys_updated_on>2021-01-25 16:40:12</sys_updated_on><title/><u_image/><u_template/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=c2c26f63db392890e2c70ad9f4961966"/></record_update>]]></payload>
+<payload_hash>-2049748356</payload_hash>
+<remote_update_set display_value="Multi-language Search">4fd498b61bd6a45017cf0edacd4bcb95</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>X228263</sys_created_by>
+<sys_created_on>2021-02-16 14:16:28</sys_created_on>
+<sys_id>cfd498b61bd6a45017cf0edacd4bcb98</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>177447ff5d60000001</sys_recorded_at>
+<sys_updated_by>X228263</sys_updated_by>
+<sys_updated_on>2021-02-16 14:16:28</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>fc18a5dc498220d02ead929470191e45</update_guid>
+<update_guid_history>fc18a5dc498220d02ead929470191e45:-2049748356,86c26f636c392890228b382f99846669:308065776</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
